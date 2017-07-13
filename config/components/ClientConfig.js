@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import serialize from 'serialize-javascript';
 import filterWithRules from '../../shared/utils/objects/filterWithRules';
-import values from '../values';
+import { getConfig } from '../../config';
 
+const values = getConfig();
 // Filter the config down to the properties that are allowed to be included
 // in the HTML response.
 const clientConfig = filterWithRules(

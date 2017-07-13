@@ -1,13 +1,4 @@
-/**
- * Project Configuration.
- *
- * NOTE: All file/folder paths should be relative to the project root. The
- * absolute paths should be resolved during runtime by our build internal/server.
- */
-
-import * as EnvVars from './utils/envVars';
-
-const values = {
+module.exports = {
   // The configuration values that should be exposed to our client bundle.
   // This value gets passed through the /shared/utils/objects/filterWithRules
   // util to create a filter object that can be serialised and included
@@ -27,17 +18,17 @@ const values = {
   },
 
   // The host on which the server should run.
-  host: EnvVars.string('HOST', '0.0.0.0'),
+  host: 'localhost',
   // The port on which the server should run.
-  port: EnvVars.number('PORT', 1337),
+  port: 1337,
 
   // The port on which the client bundle development server should run.
-  clientDevServerPort: EnvVars.number('CLIENT_DEV_PORT', 7331),
+  clientDevServerPort: 7331,
 
   // This is an example environment variable which is used within the react
   // application to demonstrate the usage of environment variables across
   // the client and server bundles.
-  welcomeMessage: EnvVars.string('WELCOME_MSG', 'Hello world!'),
+  welcomeMessage: 'Hello world!',
 
   // Disable server side rendering?
   disableSSR: false,
@@ -302,13 +293,3 @@ const values = {
     },
   },
 };
-
-// This protects us from accidentally including this configuration in our
-// client bundle. That would be a big NO NO to do. :)
-if (process.env.BUILD_FLAG_IS_CLIENT === 'true') {
-  throw new Error(
-    "You shouldn't be importing the `<projectroot>/config/values.js` directly into code that will be included in your 'client' bundle as the configuration object will be sent to user's browsers. This could be a security risk! Instead, use the `config` helper function located at `<projectroot>/config/index.js`.",
-  );
-}
-
-export default values;

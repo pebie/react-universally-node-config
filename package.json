@@ -29,6 +29,8 @@
     ]
   },
   "jest": {
+
+    "verbose": true,
     "collectCoverageFrom": [
       "shared/**/*.{js,jsx}"
     ],
@@ -36,7 +38,7 @@
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/(build|internal|node_modules|flow-typed|public)/"
+      "<rootDir>/(build|internal|node_modules|flow-typed|public|config)/"
     ]
   },
   "repository": {
@@ -66,6 +68,7 @@
     "express": "4.15.3",
     "helmet": "3.6.1",
     "hpp": "0.2.2",
+    "lodash": "4.17.4",
     "modernizr": "3.5.0",
     "normalize.css": "7.0.0",
     "offline-plugin": "4.8.3",

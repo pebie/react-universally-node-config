@@ -1,5 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/**
+ * @jest-environment node
+ */
 
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { shallow } from 'enzyme';
 

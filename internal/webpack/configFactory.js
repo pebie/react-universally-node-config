@@ -184,6 +184,9 @@ export default function webpackConfigFactory(buildOptions) {
     // library to help us generate an externals configuration that will
     // ignore all the node_modules.
     externals: removeNil([
+      // config module only used at node runtime
+      // we should not bundle it
+      'config',
       ifNode(() =>
         nodeExternals(
           // Some of our node_modules may contain files that depend on our
