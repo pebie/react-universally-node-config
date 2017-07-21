@@ -5,11 +5,12 @@ import { render } from 'react-dom';
 import BrowserRouter from 'react-router-dom/BrowserRouter';
 import asyncBootstrapper from 'react-async-bootstrapper';
 import { AsyncComponentProvider } from 'react-async-component';
+// eslint-disable-next-line
+import AppEngine from 'AppEngine';
 
 import './polyfills';
 
 import ReactHotLoader from './components/ReactHotLoader';
-import DemoApp from '../shared/components/DemoApp';
 
 // Get the DOM Element that will host our React application.
 const container = document.querySelector('#app');
@@ -46,7 +47,7 @@ function renderApp(TheApp) {
 }
 
 // Execute the first render of our app.
-renderApp(DemoApp);
+renderApp(AppEngine);
 
 // This registers our service worker for asset caching and offline support.
 // Keep this as the last item, just in case the code execution failed (thanks
@@ -58,7 +59,8 @@ if (process.env.BUILD_FLAG_IS_DEV === 'true' && module.hot) {
   // Accept changes to this file for hot reloading.
   module.hot.accept('./index.js');
   // Any changes to our App will cause a hotload re-render.
-  module.hot.accept('../shared/components/DemoApp', () => {
-    renderApp(require('../shared/components/DemoApp').default);
+  module.hot.accept('AppEngine', () => {
+    // eslint-disable-next-line
+    renderApp(require('AppEngine').default);
   });
 }

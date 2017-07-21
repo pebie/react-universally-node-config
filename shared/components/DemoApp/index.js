@@ -16,12 +16,14 @@ import AsyncHomeRoute from './AsyncHomeRoute';
 import AsyncCounterRoute from './AsyncCounterRoute';
 import AsyncAboutRoute from './AsyncAboutRoute';
 
-function DemoApp() {
+function AppEngine() {
   return (
     <div style={{ padding: '2rem' }}>
       <Helmet>
         <html lang="en" />
-        <title>{config('htmlPage.defaultTitle')}</title>
+        <title>
+          {config('htmlPage.defaultTitle')}
+        </title>
         <meta name="application-name" content={config('htmlPage.defaultTitle')} />
         <meta name="description" content={config('htmlPage.description')} />
         <meta charSet="utf-8" />
@@ -124,4 +126,4 @@ function DemoApp() {
   );
 }
 
-export default DemoApp;
+export default AppEngine;

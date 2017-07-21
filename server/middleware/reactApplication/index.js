@@ -4,11 +4,12 @@ import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import { AsyncComponentProvider, createAsyncContext } from 'react-async-component';
 import asyncBootstrapper from 'react-async-bootstrapper';
+// eslint-disable-next-line
+import AppEngine from 'AppEngine';
 
 import config from '../../../config';
 
 import ServerHTML from './ServerHTML';
-import DemoApp from '../../../shared/components/DemoApp';
 
 /**
  * React application middleware, supports server side rendering.
@@ -46,7 +47,7 @@ export default function reactApplicationMiddleware(request, response) {
   const app = (
     <AsyncComponentProvider asyncContext={asyncComponentsContext}>
       <StaticRouter location={request.url} context={reactRouterContext}>
-        <DemoApp />
+        <AppEngine />
       </StaticRouter>
     </AsyncComponentProvider>
   );

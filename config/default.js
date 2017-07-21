@@ -17,6 +17,12 @@ module.exports = {
     htmlPage: true,
   },
 
+  // Application rendering engine
+  renderingEngine: {
+    // Rendering engine
+    entry: './shared/components/DemoApp/',
+  },
+
   // The host on which the server should run.
   host: 'localhost',
   // The port on which the server should run.

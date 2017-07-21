@@ -12,7 +12,6 @@ import { mergeDeep } from '../../shared/utils/objects';
 import { removeNil } from '../../shared/utils/arrays';
 import withServiceWorker from './withServiceWorker';
 import config from '../../config';
-
 /**
  * Generates a webpack configuration for the target configuration.
  *
@@ -175,6 +174,7 @@ export default function webpackConfigFactory(buildOptions) {
       // @see https://github.com/peerigon/modernizr-loader
       alias: {
         modernizr$: path.resolve(appRootDir.get(), './.modernizrrc'),
+        AppEngine: path.resolve(appRootDir.get(), config('renderingEngine.entry')),
       },
     },
 
