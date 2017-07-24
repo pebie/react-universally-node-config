@@ -5,7 +5,7 @@ import { StaticRouter } from 'react-router-dom';
 import { AsyncComponentProvider, createAsyncContext } from 'react-async-component';
 import asyncBootstrapper from 'react-async-bootstrapper';
 // eslint-disable-next-line
-import AppEngine from 'AppEngine';
+import RenderingEngine from 'RenderingEngine';
 
 import config from '../../../config';
 
@@ -47,7 +47,7 @@ export default function reactApplicationMiddleware(request, response) {
   const app = (
     <AsyncComponentProvider asyncContext={asyncComponentsContext}>
       <StaticRouter location={request.url} context={reactRouterContext}>
-        <AppEngine />
+        <RenderingEngine nonce={nonce} />
       </StaticRouter>
     </AsyncComponentProvider>
   );

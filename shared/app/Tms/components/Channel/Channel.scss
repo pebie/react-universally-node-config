@@ -1,0 +1,25 @@
+/* CHANNEL
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+@import './../../assets/base_scss/_animations.scss';
+
+.channel {
+  @include size(100%);
+  position: relative;
+
+  &--loading {
+    @extend %placeHolderFade;
+    background-color: lighten(palette(neutral, grey-200), 7%);
+  }
+
+  &__logo {
+    @include absolute-position();
+    @include size(100%);
+    transform: scale(.8); /* display logo nicely (too big) */
+    text-align: center;
+  }
+}

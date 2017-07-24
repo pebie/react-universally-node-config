@@ -1,0 +1,1712 @@
+{
+   "currentPage":{
+      "displayTemplate":"contentGrid",
+      "displayName":"Jeunesse",
+      "BOName":"Jeunesse",
+      "BOLayoutName":"[Webapp] Jeunesse",
+      "path":"/jeunesse/"
+   },
+   "tracking":{
+      "omniture":{
+         "prop4":"Usage - Theme",
+         "prop5":"Usage - Theme - Jeunesse",
+         "pageName":"Usage - Theme - Jeunesse",
+         "channel":"Usage",
+         "eVar31":"[Webapp] Jeunesse",
+         "prop10":"Contenu",
+         "prop11":"Autres",
+         "prop12":"Consumer"
+      }
+   },
+   "contents":[
+      {
+         "type":"folder",
+         "contentID":"creplay_la_playlist_des_vacances_avr2017_2",
+         "title":"La Playlist des Vacances",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/53643695",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"contentGrid",
+            "displayName":"La Playlist des Vacances",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/contentGrid/68c2bbed0fdba37bc35209d8ba75c907/creplay_la_playlist_des_vacances_avr2017_2;vYA.json?params%5BdetailType%5D=contentGrid&objectType=list&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"La Playlist des Vacances",
+            "path":"/la-playlist-des-vacances/h/creplay_la_playlist_des_vacances_avr2017_2"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"4905950_50001",
+         "title":"Clochette et la créature légendaire",
+         "subtitle":"Film Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/54125687",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Clochette et la créature légendaire",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4905950_50001;1u02;7V1xMIRKhp.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Clochette et la créature légendaire",
+            "path":"/cinema/clochette-et-la-creature-legendaire/h/4905950_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4463149_50001",
+         "title":"Les Crumpets - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/53155229",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les Crumpets - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4463149_50001;2ZL9;7VXZEgDOuI.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les Crumpets - S1",
+            "path":"/jeunesse//h/4463149_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6844917_50045",
+         "title":"Carotina Superbip",
+         "subtitle":"Saison 1 à 1",
+         "thirdTitle":"Nickelodeon Junior",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/51159656",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40066_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Carotina Superbip",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6844917_50045;CnW;7VWUXjTJBj.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Carotina Superbip",
+            "path":"/jeunesse/carotina-superbip/h/6844917_50045"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4463147_50001",
+         "title":"Le frigo",
+         "subtitle":"Saison 1 à 1",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/53155232",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Le frigo",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4463147_50001;Skp;7VYVbWTjFB.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Le frigo",
+            "path":"/jeunesse/le-frigo/h/4463147_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4463182_50001",
+         "title":"Kaeloo - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/15119397",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Kaeloo - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4463182_50001;QVh;7VXZEgDOtK.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Kaeloo - S2",
+            "path":"/jeunesse/kaeloo/h/4456740_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5751648_50001",
+         "title":"Molang",
+         "subtitle":"Saison 1 à 2",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/58526856",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Molang",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5751648_50001;1P6L;7VYzgnYfeT.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Molang",
+            "path":"/jeunesse/molang/h/5751648_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7995719_50015",
+         "title":"Mighty Magiswords",
+         "subtitle":"Saison 1 à 1",
+         "thirdTitle":"Cartoon Networks",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/49243025",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40031_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Mighty Magiswords",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7995719_50015;2Zq0;7VWeLkGWfJ.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Mighty Magiswords",
+            "path":"/jeunesse/mighty-magiswords/h/7995719_50015"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6250561_50020",
+         "title":"Les Pyjamasques",
+         "subtitle":"Saison 1 à 1",
+         "thirdTitle":"Disney Junior",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/43764601",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40007_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Les Pyjamasques",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6250561_50020;3zb3;7VWeQ1mbrN.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les Pyjamasques",
+            "path":"/jeunesse/les-pyjamasques/h/6250561_50020"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6464102_50018",
+         "title":"Soy Luna",
+         "subtitle":"Saison 2 à 2",
+         "thirdTitle":"Disney Channel",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/48863191",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40009_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Soy Luna",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6464102_50018;28Sg;7VXZIXj4Uf.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Soy Luna",
+            "path":"/jeunesse/soy-luna/h/6464102_50018"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7503677_50001",
+         "title":"Cracké - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Cracké - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7503677_50001;16aD;7VXZEgDOv2.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Cracké - S1",
+            "path":"/jeunesse/cracke/h/7503642_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8248001_50050",
+         "title":"Les Floogals",
+         "subtitle":"Saison 1 à 1",
+         "thirdTitle":"Piwi+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Les Floogals",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8248001_50050;2rPC;7VXZEgDOtZ.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les Floogals",
+            "path":"/jeunesse/les-floogals/h/8248001_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8195886_50021",
+         "title":"La loi de Milo Murphy",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Disney XD",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40054_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"La loi de Milo Murphy",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8195886_50021;2M8a;7VQYbdvrHp.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"La loi de Milo Murphy",
+            "path":"/jeunesse/la-loi-de-milo-murphy/h/8195886_50021"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8283079_50014",
+         "title":"Beyblade Burst",
+         "subtitle":"Saison 1 à 1",
+         "thirdTitle":"Canal J",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40032_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"Beyblade Burst",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8283079_50014;2Hae;7VXZIXj3MA.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Beyblade Burst",
+            "path":"/jeunesse/beyblade-burst/h/8283079_50014"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4443311_50036",
+         "title":"L'école des champions",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52908171",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailShow",
+            "displayName":"L'école des champions",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4443311_50036;3erQ;7VXvR8xfOk.json?params%5BdetailType%5D=detailShow&objectType=brand&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"L'école des champions",
+            "path":"/jeunesse/l-ecole-des-champions/h/4443311_50036"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6261571_50043",
+         "title":"Henry Danger - S2",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Nickelodeon",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/18736502",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40041_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Henry Danger - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6261571_50043;1vQI;7VYFQfQEbr.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Henry Danger - S2",
+            "path":"/jeunesse//h/6261571_50043"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4643329_50050",
+         "title":"Le livre de la jungle - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Piwi+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Le livre de la jungle - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4643329_50050;1Dh1;7VZ9DnX7PV.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Le livre de la jungle - S1",
+            "path":"//le-livre-de-la-jungle/h/4643328_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7560813_50050",
+         "title":"Molang - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Molang - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7560813_50050;WYM;7VZ6UC0iPB.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Molang - S2",
+            "path":"//molang/h/5751648_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7820496_50059",
+         "title":"Talking Tom and Friends - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/46806178",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Talking Tom and Friends - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7820496_50059;HbP;7VZ6UC0iPB.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Talking Tom and Friends - S1",
+            "path":"///h/7820496_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4910940_50050",
+         "title":"Pierre Lapin - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Pierre Lapin - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4910940_50050;AaU;7VZ5oQHoWj.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Pierre Lapin - S2",
+            "path":"//pierre-lapin/h/4443396_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4456731_50059",
+         "title":"Copy Cut - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/57744105",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Copy Cut - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4456731_50059;32rA;7VZ1f06VeL.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Copy Cut - S1",
+            "path":"///h/4456731_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6564642_50059",
+         "title":"Le grand défitoon",
+         "subtitle":"Mag. Jeunesse",
+         "thirdTitle":"Teletoon+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Le grand défitoon",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6564642_50059;mB6;7VYYYm9zoP.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Le grand défitoon",
+            "path":"///h/6564642_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4463146_50001",
+         "title":"Le frigo - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/53155232",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Le frigo - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4463146_50001;2fNT;7VYVbWTjFB.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Le frigo - S1",
+            "path":"///h/4463146_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5145741_50050",
+         "title":"Bienvenue à Bric-à-Broc - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/22274428",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Bienvenue à Bric-à-Broc - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5145741_50050;ERq;7VYUArzm75.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Bienvenue à Bric-à-Broc - S1",
+            "path":"///h/5145741_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4637365_50050",
+         "title":"Robocar Poli - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/8700",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Robocar Poli - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4637365_50050;2EDq;7VYPmXFrGD.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Robocar Poli - S2",
+            "path":"//robocar-poli/h/4637363_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7582088_50050",
+         "title":"Boing, super ranger - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/33737474",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Boing, super ranger - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7582088_50050;uMI;7VYN6jI5QH.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Boing, super ranger - S1",
+            "path":"//boing-super-ranger/h/4800228_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5607470_50059",
+         "title":"Les p'tits cuistots",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les p'tits cuistots",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5607470_50059;3FLu;7VYMuOo8ib.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les p'tits cuistots",
+            "path":"/jeunesse//h/5607470_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4456730_50059",
+         "title":"Camp Lakebottom - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Camp Lakebottom - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4456730_50059;2Hvg;7VYKZ35eoT.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Camp Lakebottom - S1",
+            "path":"//camp-lakebottom/h/4443384_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7560813_50001",
+         "title":"Molang - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Molang - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7560813_50001;hyR;7VYzgnYfmk.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Molang - S2",
+            "path":"///h/7560813_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4637354_50059",
+         "title":"Le Petit Spirou - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Le Petit Spirou - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4637354_50059;354B;7VYpOmOBUP.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Le Petit Spirou - S1",
+            "path":"//le-petit-spirou/h/4443583_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6405018_50059",
+         "title":"Snoopy et la bande des Peanuts",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Snoopy et la bande des Peanuts",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6405018_50059;jbi;7VYowFvrBJ.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Snoopy et la bande des Peanuts",
+            "path":"//snoopy-et-la-bande-des-peanuts/h/6404999_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4764537_50059",
+         "title":"Gnark - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Gnark - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4764537_50059;fSF;7VYanZ6CdF.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Gnark - S1",
+            "path":"//gnark/h/4764536_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"4095939_50059",
+         "title":"Michel - Ép 26",
+         "subtitle":"Épisode 26 : Le mystèr...",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/19960643",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Michel - Ép 26",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4095939_50059;2ZIN;7VY8Nx8tvx.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Michel - Ép 26",
+            "path":"/jeunesse/michel-episode-26/h/4095939_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"4095940_50059",
+         "title":"Michel - Ép 23",
+         "subtitle":"Épisode 23 : Amadeus",
+         "thirdTitle":"Teletoon+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Michel - Ép 23",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4095940_50059;2UcW;7VY7Fd9NAz.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Michel - Ép 23",
+            "path":"//michel-episode-23/h/4095940_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"5378830_50059",
+         "title":"Kika & Bob : Le zombie de houte-s'i-plout",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/23330666",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Kika & Bob : Le zombie de houte-s'i-plout",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5378830_50059;33ey;7VY4gfdLPF.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Kika & Bob : Le zombie de houte-s'i-plout",
+            "path":"/jeunesse/kika-bob-le-zombie-de-houte-s-i-plout/h/5378830_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"5378828_50059",
+         "title":"Kika & Bob : Sur la route du tour",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/23330656",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Kika & Bob : Sur la route du tour",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5378828_50059;A6b;7VY37Vf5UH.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Kika & Bob : Sur la route du tour",
+            "path":"/jeunesse/kika-bob-sur-la-route-du-tour/h/5378828_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5145591_50059",
+         "title":"Les fous du kung-fu - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52679779",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les fous du kung-fu - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5145591_50059;3SMo;7VXZSkDyay.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les fous du kung-fu - S1",
+            "path":"/jeunesse//h/5145591_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4764547_50059",
+         "title":"Raymond - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/10773",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Raymond - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4764547_50059;2Byu;7VXZEgDOA7.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Raymond - S2",
+            "path":"/jeunesse//h/4764547_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4733839_50050",
+         "title":"Martin Matin - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/57881558",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Martin Matin - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4733839_50050;aPS;7VXZEgDOzN.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Martin Matin - S1",
+            "path":"/jeunesse//h/4733839_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4656740_50059",
+         "title":"Grachi - S1",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/344925",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Grachi - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4656740_50059;1OVh;7VXZEgDOze.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Grachi - S1",
+            "path":"/jeunesse/grachi/h/4656739_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6565448_50050",
+         "title":"Au pays des signes",
+         "subtitle":"Mag. Jeunesse",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/8735",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Au pays des signes",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6565448_50050;2OB0;7VXZEgDOyP.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Au pays des signes",
+            "path":"/jeunesse//h/6565448_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5528061_50059",
+         "title":"Lassie",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/26686570",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Lassie",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5528061_50059;2KAk;7VXZEgDOyP.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Lassie",
+            "path":"///h/5528061_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6947004_50050",
+         "title":"La fée Coquillette - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"La fée Coquillette - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6947004_50050;2Sz8;7VXZEgDOyP.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"La fée Coquillette - S1",
+            "path":"/jeunesse//h/6947004_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4443819_50059",
+         "title":"Les mystérieuses cités d'or - S2",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/9827377",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les mystérieuses cités d'or - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4443819_50059;2Hcj;7VXZEgDOyl.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les mystérieuses cités d'or - S2",
+            "path":"/jeunesse/les-mysterieuses-cites-d-or/h/4443589_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4637362_50050",
+         "title":"Polo, l'explorateur de l'imaginaire - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/14477280",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Polo, l'explorateur de l'imaginaire - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4637362_50050;2E3J;7VXZEgDOxR.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Polo, l'explorateur de l'imaginaire - S1",
+            "path":"/jeunesse//h/4637362_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8283099_50050",
+         "title":"Gribouille en LSF",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/19688145",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Gribouille en LSF",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8283099_50050;yAG;7VXM75yWI4.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Gribouille en LSF",
+            "path":"///h/8283099_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8749251_50045",
+         "title":"Regal Academy : L'académie royale",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Nickelodeon Junior",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52541490",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40066_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Regal Academy : L'académie royale",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8749251_50045;3Ojn;7VYFQfQEbr.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Regal Academy : L'académie royale",
+            "path":"/jeunesse//h/8749251_50045"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6445617_50059",
+         "title":"Nowhere Boys : entre deux mondes - S2",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/32299536",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Nowhere Boys : entre deux mondes - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6445617_50059;23jy;7VXFUF0QNF.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Nowhere Boys : entre deux mondes - S2",
+            "path":"/jeunesse//h/6445617_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5527853_50044",
+         "title":"3 fantômes chez les Hathaway",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Nickelodeon 4teen",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/15237161",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40024_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"3 fantômes chez les Hathaway",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5527853_50044;1wxG;7VYFQfQzjv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"3 fantômes chez les Hathaway",
+            "path":"/jeunesse/3-fantomes-chez-les-hathaway/h/4443281_50044"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8328588_50050",
+         "title":"Bob le bricoleur - S19",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/29404042",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Bob le bricoleur - S19",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8328588_50050;jsJ;7VXZEgDOut.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Bob le bricoleur - S19",
+            "path":"/jeunesse/bob-le-bricoleur/h/6251305_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7560812_50001",
+         "title":"Mon chevalier et moi - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/44072959",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Mon chevalier et moi - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7560812_50001;2lBJ;7VXZEgDOue.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Mon chevalier et moi - S1",
+            "path":"/jeunesse/mon-chevalier-et-moi/h/7560814_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8248000_50050",
+         "title":"Les Floogals - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52737705",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les Floogals - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8248000_50050;3Z0Y;7VXZEgDOtZ.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les Floogals - S1",
+            "path":"/jeunesse/les-floogals/h/8248001_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4573399_50001",
+         "title":"Chasseurs de dragons - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/57744141",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Chasseurs de dragons - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4573399_50001;xkM;7VXZEgDOtU.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Chasseurs de dragons - S1",
+            "path":"/jeunesse/chasseurs-de-dragons/h/4573398_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7045524_50059",
+         "title":"Angelo la débrouille - S3",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/10928",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Angelo la débrouille - S3",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7045524_50059;4ry;7VYTiKgbHt.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Angelo la débrouille - S3",
+            "path":"/jeunesse/angelo-la-debrouille/h/4651465_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4603898_50050",
+         "title":"Grabouillon - S3",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/57743405",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Grabouillon - S3",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4603898_50050;2q3n;7VXZEgDOsR.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Grabouillon - S3",
+            "path":"/jeunesse/grabouillon/h/4444188_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4805728_50036",
+         "title":"Inspecteur Gadget - S2",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52902673",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Inspecteur Gadget - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4805728_50036;3lSj;7VZ9bfXGpH.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Inspecteur Gadget - S2",
+            "path":"/jeunesse/inspecteur-gadget/h/4805726_50036"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7560812_50059",
+         "title":"Mon chevalier et moi - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/44072959",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Mon chevalier et moi - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7560812_50059;2x7J;7VZ9bfXEFx.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Mon chevalier et moi - S1",
+            "path":"/jeunesse/mon-chevalier-et-moi/h/7560814_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4456735_50059",
+         "title":"Drôles de colocs - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/14308223",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Drôles de colocs - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4456735_50059;nXs;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Drôles de colocs - S1",
+            "path":"/jeunesse/droles-de-colocs/h/4456736_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7593700_50050",
+         "title":"La cabane à histoires - S1",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/46166018",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"La cabane à histoires - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7593700_50050;2guq;7VZ3vE4h4H.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"La cabane à histoires - S1",
+            "path":"/jeunesse/la-cabane-a-histoires/h/7593701_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8505822_50050",
+         "title":"Rainbow Ruby - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/54671980",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Rainbow Ruby - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8505822_50050;3JaG;7VYXQ2aTtR.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Rainbow Ruby - S1",
+            "path":"/jeunesse/rainbow-ruby/h/8505823_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6445616_50050",
+         "title":"Boule et Bill - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/55087150",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Boule et Bill - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6445616_50050;2fZN;7VYVzodxDV.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Boule et Bill - S1",
+            "path":"/jeunesse//h/6445616_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6648707_50050",
+         "title":"Boule et Bill - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/56961929",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Boule et Bill - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6648707_50050;2DbM;7VYVzodxyn.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Boule et Bill - S1",
+            "path":"/jeunesse/boule-et-bill/h/6251492_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8376500_50050",
+         "title":"Messy et le monde d'Okido - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52540410",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Messy et le monde d'Okido - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8376500_50050;3QAp;7VYSaqhvT1.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Messy et le monde d'Okido - S1",
+            "path":"/jeunesse/messy-et-le-monde-d-okido/h/8376499_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4443114_50050",
+         "title":"Sam le pompier - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52787870",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Sam le pompier - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4443114_50050;h6f;7VYR26iPY3.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Sam le pompier - S1",
+            "path":"/jeunesse/sam-le-pompier/h/4443389_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4602756_50050",
+         "title":"Grabouillon - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Piwi+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/1187624",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40063_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Grabouillon - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4602756_50050;1IZi;7VYLmupsnd.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Grabouillon - S2",
+            "path":"/jeunesse/grabouillon/h/4444188_50050"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6309421_50059",
+         "title":"Flapacha, où es-tu ? - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/18131124",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Flapacha, où es-tu ? - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6309421_50059;46O5;7VYLmupsnd.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Flapacha, où es-tu ? - S2",
+            "path":"/jeunesse/flapacha-ou-es-tu/h/4443487_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5563925_50044",
+         "title":"Sam & Cat",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Nickelodeon 4teen",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/4254963",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40024_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Sam & Cat",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5563925_50044;1yJC;7VXZIXj3Vz.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Sam & Cat",
+            "path":"/jeunesse/sam-cat/h/4443621_50044"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6251570_50059",
+         "title":"Zak et les insectibles - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/29830593",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Zak et les insectibles - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6251570_50059;3yPy;7VYJ5Qs6xh.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Zak et les insectibles - S1",
+            "path":"/jeunesse/zak-et-les-insectibles/h/6251569_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4637368_50059",
+         "title":"Tous en slip - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/3521",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Tous en slip - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4637368_50059;LqL;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Tous en slip - S1",
+            "path":"/jeunesse/tous-en-slip/h/4637367_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5145596_50044",
+         "title":"Bella et les Bulldogs - S1",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Nickelodeon 4teen",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/19977682",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40024_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Bella et les Bulldogs - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5145596_50044;1LzE;7VYFQfQzjv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Bella et les Bulldogs - S1",
+            "path":"/jeunesse/bella-et-les-bulldogs/h/5145595_50044"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5527411_50043",
+         "title":"Les lapins crétins : invasion",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Nickelodeon",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/11586167",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40041_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les lapins crétins : invasion",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5527411_50043;1z6w;7VYFQfQzUY.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les lapins crétins : invasion",
+            "path":"/jeunesse/les-lapins-cretins-invasion/h/4443916_50043"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8603467_50045",
+         "title":"Paw Patrol, la Pat'Patrouille - S3",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Nickelodeon Junior",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/56961922",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40066_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Paw Patrol, la Pat'Patrouille - S3",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8603467_50045;1LYY;7VYFQfQEbr.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Paw Patrol, la Pat'Patrouille - S3",
+            "path":"/jeunesse/paw-patrol-la-pat-patrouille/h/4443786_50045"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7661134_50001",
+         "title":"Miru Miru - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/44898998",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Miru Miru - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7661134_50001;2qM1;7VYwZK0ToX.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Miru Miru - S1",
+            "path":"/jeunesse/miru-miru/h/7661115_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4637357_50001",
+         "title":"Les p'tits diables - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les p'tits diables - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4637357_50001;lBi;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les p'tits diables - S1",
+            "path":"/jeunesse/les-p-tits-diables/h/4443145_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4764550_50059",
+         "title":"Sherlock Yack : zoo-détective - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/1164514",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Sherlock Yack : zoo-détective - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4764550_50059;2szV;7VYulEJjAH.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Sherlock Yack : zoo-détective - S1",
+            "path":"/jeunesse/sherlock-yack-zoo-detective/h/4764548_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7593720_50059",
+         "title":"Quizzine",
+         "subtitle":"Mag. Jeunesse",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/44759489",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Quizzine",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7593720_50059;2RJ3;7VYulEJjAH.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Quizzine",
+            "path":"/jeunesse/quizzine/h/7560873_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5527862_50044",
+         "title":"Big Time Rush",
+         "subtitle":"Série Jeunesse",
+         "thirdTitle":"Nickelodeon 4teen",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/5856142",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40024_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Big Time Rush",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5527862_50044;1AlG;7VYFQfQzjv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Big Time Rush",
+            "path":"/jeunesse/big-time-rush/h/4443656_50044"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4805727_50036",
+         "title":"Inspecteur Gadget - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52902667",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Inspecteur Gadget - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4805727_50036;3m37;7VZ9bfXEK6.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Inspecteur Gadget - S1",
+            "path":"/jeunesse/inspecteur-gadget/h/4805726_50036"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6767510_50059",
+         "title":"Snoopy et la bande des Peanuts - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52909046",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Snoopy et la bande des Peanuts - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6767510_50059;1bg2;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Snoopy et la bande des Peanuts - S1",
+            "path":"/jeunesse/snoopy-et-la-bande-des-peanuts/h/6404999_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"5490519_50044",
+         "title":"Big Time Rush - S3 - Ép 4",
+         "subtitle":"Épisode 4 : Double ren...",
+         "thirdTitle":"Nickelodeon 4teen",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/663864",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40024_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Big Time Rush - S3 - Ép 4",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5490519_50044;3RaV;7VYFQfQEbr.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Big Time Rush - S3 - Ép 4",
+            "path":"/jeunesse/big-time-rush-saison-3-episode-4/h/5490519_50044"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4954397_50036",
+         "title":"Sophie et Virginie - S2",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/22553905",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Sophie et Virginie - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4954397_50036;47Cx;7VYjjbBxf4.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Sophie et Virginie - S2",
+            "path":"/jeunesse/sophie-et-virginie/h/4852253_50036"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8453684_50036",
+         "title":"Les jumeaux du bout du monde - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/22553903",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les jumeaux du bout du monde - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8453684_50036;x9v;7VYfwMlhv3.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les jumeaux du bout du monde - S1",
+            "path":"/jeunesse/les-jumeaux-du-bout-du-monde/h/4833560_50036"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"4095949_50059",
+         "title":"Michel - Ép 22",
+         "subtitle":"Épisode 22 : Caillou",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/14540318",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Michel - Ép 22",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4095949_50059;33Le;7VWnUBbyVp.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Michel - Ép 22",
+            "path":"/jeunesse/michel-episode-22/h/4095949_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"4095981_50059",
+         "title":"Michel - Ép 20",
+         "subtitle":"Épisode 20 : Détective...",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/19960618",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Michel - Ép 20",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4095981_50059;pOT;7VWmMhcT0r.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Michel - Ép 20",
+            "path":"/jeunesse/michel-episode-20/h/4095981_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"5373737_50059",
+         "title":"Kika & Bob : Tilly à Tokyo",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/23272116",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Kika & Bob : Tilly à Tokyo",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5373737_50059;2Pdv;7VWjnjgRfx.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Kika & Bob : Tilly à Tokyo",
+            "path":"/jeunesse/kika-bob-tilly-a-tokyo/h/5373737_50059"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"5373731_50059",
+         "title":"Kika & Bob : La belle vie de Tilly",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Teletoon+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/23272120",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40064_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailPage",
+            "displayName":"Kika & Bob : La belle vie de Tilly",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5373731_50059;zTJ;7VWieZibkz.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Kika & Bob : La belle vie de Tilly",
+            "path":"/jeunesse/kika-bob-la-belle-vie-de-tilly/h/5373731_50059"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6741132_50043",
+         "title":"Bienvenue chez les Loud - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Nickelodeon",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/56899764",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40041_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Bienvenue chez les Loud - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6741132_50043;S6c;7VWUXjTGeh.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Bienvenue chez les Loud - S1",
+            "path":"/jeunesse/bienvenue-chez-les-loud/h/6741134_50043"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"8265308_50045",
+         "title":"Regal Academy : L'académie royale - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Nickelodeon Junior",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52541490",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40066_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Regal Academy : L'académie royale - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/8265308_50045;3RRN;7VWUXjTF6B.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Regal Academy : L'académie royale - S1",
+            "path":"/jeunesse/regal-academy-l-academie-royale/h/8265280_50045"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4443522_50001",
+         "title":"L'île des défis extrêmes - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/11182",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"L'île des défis extrêmes - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4443522_50001;1fgB;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"L'île des défis extrêmes - S1",
+            "path":"/jeunesse/l-ile-des-defis-extremes/h/4443521_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6997100_50036",
+         "title":"L'école des champions - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/52908175",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"L'école des champions - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6997100_50036;3mOK;7VXvR8xfOk.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"L'école des champions - S1",
+            "path":"/jeunesse/l-ecole-des-champions/h/4443311_50036"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7612226_50001",
+         "title":"Jamie a des tentacules - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/14871228",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Jamie a des tentacules - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7612226_50001;41G3;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Jamie a des tentacules - S2",
+            "path":"/jeunesse/jamie-a-des-tentacules/h/4443193_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4764576_50001",
+         "title":"Ovni - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/1587370",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Ovni - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4764576_50001;1sUZ;7VXZEgDPIb.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Ovni - S1",
+            "path":"/jeunesse/ovni/h/4764575_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5571982_50036",
+         "title":"Les aventures de Sherlock Holmes - S1",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/19213794",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les aventures de Sherlock Holmes - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5571982_50036;1MQq;7VXifgNa3l.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les aventures de Sherlock Holmes - S1",
+            "path":"/jeunesse/les-aventures-de-sherlock-holmes/h/4833583_50036"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7560855_50001",
+         "title":"Les fous du kung-fu - S2",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/29873953",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les fous du kung-fu - S2",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7560855_50001;3y7k;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les fous du kung-fu - S2",
+            "path":"/jeunesse/les-fous-du-kung-fu/h/5145590_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"7893278_50001",
+         "title":"Les p'tits diables - S3",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/14871022",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les p'tits diables - S3",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/7893278_50001;1B50;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les p'tits diables - S3",
+            "path":"/jeunesse/les-p-tits-diables/h/4443145_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5751649_50001",
+         "title":"Molang - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/54888935",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Molang - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5751649_50001;1BmE;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Molang - S1",
+            "path":"/jeunesse/molang/h/5751648_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4456732_50001",
+         "title":"Défis extrêmes : Superstars - S5",
+         "subtitle":"Série Animation",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/18956222",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Défis extrêmes : Superstars - S5",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4456732_50001;EMH;7VXZEgDOAv.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Défis extrêmes : Superstars - S5",
+            "path":"/jeunesse/defis-extremes-superstars/h/4456733_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"4463166_50001",
+         "title":"Les Dalton - S4",
+         "subtitle":"Dessin Animé",
+         "thirdTitle":"CANAL+",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/57965326",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Les Dalton - S4",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/4463166_50001;1KiP;7VYSViVXPF.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Les Dalton - S4",
+            "path":"/jeunesse/les-dalton/h/4443300_50001"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"6844927_50045",
+         "title":"Carotina Superbip - S1",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Nickelodeon Junior",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/46943496",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40066_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Carotina Superbip - S1",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/6844927_50045;1opJ;7VWUXjTJBj.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Carotina Superbip - S1",
+            "path":"/jeunesse/carotina-superbip/h/6844917_50045"
+         }
+      },
+      {
+         "type":"folder",
+         "contentID":"5527879_50036",
+         "title":"Conan l'aventurier",
+         "subtitle":"Série Animation",
+         "thirdTitle":"Mangas",
+         "URLImage":"https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/14871436",
+         "URLLogoChannel":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40025_288_218.png",
+         "CSA":1,
+         "onClick":{
+            "displayTemplate":"detailSeason",
+            "displayName":"Conan l'aventurier",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/detail/68c2bbed0fdba37bc35209d8ba75c907/okapi/5527879_50036;1GzP;7VXBUbKRon.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true",
+            "BOName":"Conan l'aventurier",
+            "path":"/jeunesse/conan-l-aventurier/h/4443256_50036"
+         }
+      }
+   ],
+   "paging":{
+      "iterationType":"id",
+      "idStart":"YXJyYXljb25uZWN0aW9uOjA=",
+      "idEnd":"YXJyYXljb25uZWN0aW9uOjk5",
+      "nbContents":100,
+      "hasNextPage":true,
+      "hasPreviousPage":false,
+      "URLPage":"https://hodor-dev.canalplus.pro/api/v1/page/68c2bbed0fdba37bc35209d8ba75c907/4955.json?cache=60000&after=YXJyYXljb25uZWN0aW9uOjk5"
+   }
+}

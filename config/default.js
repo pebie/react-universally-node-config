@@ -20,7 +20,7 @@ module.exports = {
   // Application rendering engine
   renderingEngine: {
     // Rendering engine
-    entry: './shared/components/DemoApp/',
+    entry: './shared/app/Demo/',
   },
 
   // The host on which the server should run.

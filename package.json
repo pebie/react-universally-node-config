@@ -29,7 +29,6 @@
     ]
   },
   "jest": {
-
     "verbose": true,
     "collectCoverageFrom": [
       "shared/**/*.{js,jsx}"
@@ -38,7 +37,8 @@
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/(build|internal|node_modules|flow-typed|public|config)/"
+      "<rootDir>/(build|internal|node_modules|flow-typed|public|config)/",
+      "<rootDir>/.*/config"
     ]
   },
   "repository": {
@@ -61,8 +61,10 @@
   "homepage": "https://github.com/ctrlplusb/react-universally#readme",
   "dependencies": {
     "app-root-dir": "1.0.2",
+    "classnames": "^2.2.5",
     "colors": "1.1.2",
     "compression": "1.7.0",
+    "config": "^1.26.1",
     "cross-env": "5.0.1",
     "dotenv": "4.0.0",
     "express": "4.15.3",
@@ -117,6 +119,7 @@
     "lint-staged": "4.0.2",
     "md5": "2.2.1",
     "modernizr-loader": "1.0.1",
+    "node-mock-server": "0.16.0",
     "node-notifier": "5.1.2",
     "prettier": "1.5.3",
     "prettier-eslint": "6.4.2",

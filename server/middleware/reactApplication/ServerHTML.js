@@ -9,7 +9,8 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 import serialize from 'serialize-javascript';
-
+// eslint-disable-next-line
+import RenderingEngineConfig from 'RenderingEngineConfig';
 import config from '../../../config';
 import ifElse from '../../../shared/utils/logic/ifElse';
 import removeNil from '../../../shared/utils/arrays/removeNil';
@@ -43,9 +44,8 @@ function ServerHTML(props) {
   const { asyncComponentsState, helmet, nonce, reactAppString } = props;
 
   // Creates an inline script definition that is protected by the nonce.
-  const inlineScript = body => (
-    <script nonce={nonce} type="text/javascript" dangerouslySetInnerHTML={{ __html: body }} />
-  );
+  const inlineScript = body =>
+    <script nonce={nonce} type="text/javascript" dangerouslySetInnerHTML={{ __html: body }} />;
 
   const headerElements = removeNil([
     ...ifElse(helmet)(() => helmet.title.toComponent(), []),
@@ -61,6 +61,8 @@ function ServerHTML(props) {
     // that we can safely expose some configuration values to the
     // client bundle that gets executed in the browser.
     <ClientConfig nonce={nonce} />,
+    // And a custom one :)
+    <RenderingEngineConfig nonce={nonce} />,
     // Bind our async components state so the client knows which ones
     // to initialise so that the checksum matches the server response.
     // @see https://github.com/ctrlplusb/react-async-component
@@ -83,7 +85,9 @@ function ServerHTML(props) {
       process.env.BUILD_FLAG_IS_DEV === 'true' && config('bundles.client.devVendorDLL.enabled'),
     )(() =>
       scriptTag(
-        `${config('bundles.client.webPath')}${config('bundles.client.devVendorDLL.name')}.js?t=${Date.now()}`,
+        `${config('bundles.client.webPath')}${config(
+          'bundles.client.devVendorDLL.name',
+        )}.js?t=${Date.now()}`,
       ),
     ),
     ifElse(clientEntryAssets && clientEntryAssets.js)(() => scriptTag(clientEntryAssets.js)),
@@ -93,10 +97,16 @@ function ServerHTML(props) {
   return (
     <HTML
       htmlAttributes={ifElse(helmet)(() => helmet.htmlAttributes.toComponent(), null)}
-      headerElements={headerElements.map((x, idx) => (
-        <KeyedComponent key={idx}>{x}</KeyedComponent>
-      ))}
-      bodyElements={bodyElements.map((x, idx) => <KeyedComponent key={idx}>{x}</KeyedComponent>)}
+      headerElements={headerElements.map((x, idx) =>
+        (<KeyedComponent key={idx}>
+          {x}
+        </KeyedComponent>),
+      )}
+      bodyElements={bodyElements.map((x, idx) =>
+        (<KeyedComponent key={idx}>
+          {x}
+        </KeyedComponent>),
+      )}
       appBodyString={reactAppString}
     />
   );

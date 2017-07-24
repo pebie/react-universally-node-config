@@ -174,7 +174,8 @@ export default function webpackConfigFactory(buildOptions) {
       // @see https://github.com/peerigon/modernizr-loader
       alias: {
         modernizr$: path.resolve(appRootDir.get(), './.modernizrrc'),
-        AppEngine: path.resolve(appRootDir.get(), config('renderingEngine.entry')),
+        RenderingEngine: path.resolve(appRootDir.get(), config('renderingEngine.entry')),
+        RenderingEngineConfig: path.resolve(appRootDir.get(), config('renderingEngine.config')),
       },
     },
 

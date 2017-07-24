@@ -1,0 +1,54 @@
+/*  MOSAIC TEMPLATE
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+$paddingConfig:(
+  padding-for-wide: 0 4rem,
+  padding-for-desktop: 0 2.5rem,
+  padding-for-small: 0 1.25rem
+);
+
+$mosaicGridConfig: (
+  "43": (
+    mobile: 2,
+    tablet: 3,
+    laptop: 4,
+    desktop: 5,
+    wide: 6
+  )
+);
+
+$marginItemsConfig:(
+  margin-for-wide: 1rem,
+  margin-for-desktop: .5rem,
+  margin-for-small: .25rem
+);
+
+.mosaic {
+  @include paddingPages($paddingConfig);
+  margin: 3rem 0 1rem;
+
+  &__grid {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__gridItem {
+    @include responsiveGrid($mosaicGridConfig);
+    display: inline-block;
+    vertical-align: top;
+
+    > :first-child {
+      @include marginGridItems($marginItemsConfig);
+      display: block;
+      border: 1px solid darken(palette(mono, white), 10%);
+    }
+  }
+}

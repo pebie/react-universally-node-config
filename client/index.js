@@ -6,7 +6,7 @@ import BrowserRouter from 'react-router-dom/BrowserRouter';
 import asyncBootstrapper from 'react-async-bootstrapper';
 import { AsyncComponentProvider } from 'react-async-component';
 // eslint-disable-next-line
-import AppEngine from 'AppEngine';
+import RenderingEngine from 'RenderingEngine';
 
 import './polyfills';
 
@@ -47,7 +47,7 @@ function renderApp(TheApp) {
 }
 
 // Execute the first render of our app.
-renderApp(AppEngine);
+renderApp(RenderingEngine);
 
 // This registers our service worker for asset caching and offline support.
 // Keep this as the last item, just in case the code execution failed (thanks
@@ -59,8 +59,8 @@ if (process.env.BUILD_FLAG_IS_DEV === 'true' && module.hot) {
   // Accept changes to this file for hot reloading.
   module.hot.accept('./index.js');
   // Any changes to our App will cause a hotload re-render.
-  module.hot.accept('AppEngine', () => {
+  module.hot.accept('RenderingEngine', () => {
     // eslint-disable-next-line
-    renderApp(require('AppEngine').default);
+    renderApp(require('RenderingEngine').default);
   });
 }

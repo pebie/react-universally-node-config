@@ -5,3 +5,7 @@ help: ## Prints help
 dev: ## Run development environment
 	@echo Runing application within development environement
 	@DEPLOYMENT=development $(NODE_MODULES_BIN)/babel-node ./internal/development
+
+start-mocks: ## Run mock server
+		@echo Runing mocks server
+		@$(NODE_MODULES_BIN)/babel-node ./internal/mocks

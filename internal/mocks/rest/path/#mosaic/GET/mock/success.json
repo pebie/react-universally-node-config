@@ -1,0 +1,102 @@
+{
+   "currentPage":{
+      "displayTemplate":"mosaic",
+      "displayName":"Chaines",
+      "BOName":"Chaines",
+      "BOLayoutName":"[Webapp] Chaines",
+      "path":"/chaines/"
+   },
+   "tracking":{
+      "omniture":{
+         "prop4":"Usage - Theme",
+         "prop5":"Usage - Theme - Chaines",
+         "prop6":"Usage - Theme - Chaines - Accueil",
+         "pageName":"Usage - Theme - Chaines - Accueil",
+         "channel":"Usage",
+         "eVar31":"[Webapp] Chaines",
+         "prop10":"Contenu",
+         "prop11":"Autres",
+         "prop12":"Consumer"
+      }
+   },
+   "contents":[
+      {
+         "type":"VoD",
+         "contentID":"40052",
+         "URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+         "imageSpecificities":"isLogo",
+         "onClick":{
+            "displayTemplate":"gabaritList",
+            "displayName":"CANAL+",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/page/68c2bbed0fdba37bc35209d8ba75c907/5559.json?cache=7200000",
+            "BOName":"CANAL+",
+            "BOLayoutName":"[Chaine_canal+ Mob/Tab/webapp]",
+            "path":"/chaines/canalplus",
+            "displayType":"tab"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"40051",
+         "URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40051_288_218.png",
+         "imageSpecificities":"isLogo",
+         "onClick":{
+            "displayTemplate":"contentGrid",
+            "displayName":"Syfy",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/page/68c2bbed0fdba37bc35209d8ba75c907/1208.json?cache=60000",
+            "BOName":"Syfy",
+            "path":"/chaines/syfy"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"40056",
+         "URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40056_288_218.png",
+         "imageSpecificities":"isLogo",
+         "onClick":{
+            "displayTemplate":"contentGrid",
+            "displayName":"TV Breizh",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/page/68c2bbed0fdba37bc35209d8ba75c907/1268.json?cache=60000",
+            "BOName":"TV Breizh",
+            "path":"/theme/chaines/pid1268-tv-breizh.html"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"40002",
+         "URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40002_288_218.png",
+         "imageSpecificities":"isLogo",
+         "onClick":{
+            "displayTemplate":"contentGrid",
+            "displayName":"C8",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/page/68c2bbed0fdba37bc35209d8ba75c907/1219.json?cache=60000",
+            "BOName":"C8",
+            "path":"/theme/chaines/pid1219-c8.html"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"40003",
+         "URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40003_288_218.png",
+         "imageSpecificities":"isLogo",
+         "onClick":{
+            "displayTemplate":"contentGrid",
+            "displayName":"C Star",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/page/68c2bbed0fdba37bc35209d8ba75c907/1267.json?cache=60000",
+            "BOName":"C Star",
+            "path":"/theme/chaines/pid1267-c-star.html"
+         }
+      },
+      {
+         "type":"VoD",
+         "contentID":"40069",
+         "URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40069_288_218.png",
+         "imageSpecificities":"isLogo",
+         "onClick":{
+            "displayTemplate":"error",
+            "displayName":"Page introuvable",
+            "URLPage":"https://hodor-dev.canalplus.pro/api/v1/page/68c2bbed0fdba37bc35209d8ba75c907/6550.json"
+         }
+      }
+   ]
+}
