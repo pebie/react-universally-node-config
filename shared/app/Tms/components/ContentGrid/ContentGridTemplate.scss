@@ -1,0 +1,96 @@
+/*  CONTENT GRID TEMPLATE
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import '../../assets/base_scss/_settings';
+@import '../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+$paddingConfig:(
+  padding-for-wide: 0 4rem,
+  padding-for-desktop: 0 2.5rem,
+  padding-for-small: 0 1.25rem
+);
+
+$contentGridConfig: (
+  "166": (
+    mobile: 1,
+    tablet: 2,
+    laptop: 3,
+    desktop: 3,
+    wide: 4
+  ),
+  "169": (
+    mobile: 2,
+    tablet: 3,
+    laptop: 4,
+    desktop: 5,
+    wide: 6
+  ),
+  "34": (
+    mobile: 3,
+    tablet: 4,
+    laptop: 6,
+    desktop: 7,
+    wide: 8
+  )
+);
+
+$marginItemsConfig:(
+  margin-for-wide: 1rem,
+  margin-for-desktop: .5rem,
+  margin-for-small: .25rem
+);
+
+.contentGrid {
+  @include paddingPages($paddingConfig);
+  margin: 0 0 3rem;
+
+  &__header {
+    margin: 3rem map-get($marginItemsConfig, margin-for-wide) 2rem; // to keep align title & grid
+
+    @include mq($until: desktop) {
+      margin: 3rem map-get($marginItemsConfig, margin-for-desktop) 2rem;
+    }
+
+    @include mq($until: tablet) {
+      margin: 1rem map-get($marginItemsConfig, margin-for-small);
+    }
+  }
+
+  &__gridContainer {
+    margin: 1rem 0 0;
+  }
+
+  &__grid {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__gridItem {
+    @include responsiveGrid($contentGridConfig);
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+
+    @include mq($until: tablet) {
+      margin-bottom: 1.5rem;
+    }
+
+    > :first-child {
+      @include marginGridItems($marginItemsConfig);
+      display: block;
+    }
+  }
+
+  &__error {
+    margin: 0 1rem;
+
+    @include mq($until: tablet) {
+      margin: 0;
+    }
+  }
+}

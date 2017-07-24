@@ -1,0 +1,53 @@
+/* LABEL
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+
+$label-sizes: (
+  small: (
+    padding: .5rem 1rem,
+    font-size: 1rem,
+    font-weight: 600,
+  ),
+  medium: (
+    padding: .8rem 1.6rem,
+    font-size: 1.6rem,
+    font-weight: 600,
+  ),
+);
+$label-colors: (
+  raspberry: (
+    background-color: palette(theme, secondary),
+  ),
+);
+$label-sizes: (
+  small: (
+    padding: .5rem 1rem,
+    font-size: 1rem,
+    font-weight: 600,
+  ),
+  medium: (
+    padding: .8rem 1.6rem,
+    font-size: 1.6rem,
+    font-weight: 600,
+  ),
+);
+
+@each $size, $size-map in $label-sizes {
+  .label--#{$size} {
+    padding: map-get($size-map, padding);
+    font-size: map-get($size-map, font-size);
+    font-weight: map-get($size-map, font-weight);
+  }
+}
+@each $color, $color-map in $label-colors {
+  .label--#{$color} {
+    background-color: map-get($color-map, background-color);
+  }
+}

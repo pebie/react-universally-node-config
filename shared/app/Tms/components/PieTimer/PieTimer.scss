@@ -1,0 +1,56 @@
+/*  PIE TIMER
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+
+/* -------------------------------------
+ * Mixin for pieTimer--index class
+ * ------------------------------------- */
+
+$barColor: palette(mono, white);
+$backColor: palette(theme, secondary);
+
+/* step of % for created classes (here for 8 parts)
+ * a circle of 360° represents 100%
+ * one part = 1/8 = 45°
+ * So one step = 45 * 100 / 360 = 12.5%
+ */
+$step: 12.5;
+
+//Number of loops to create classes
+$loops: round(100 / $step);
+
+//Value of the angle to increment to fill the circle
+$increment: 360 / $loops;
+
+//get the index of the half of the circle
+$half: round($loops / 2);
+
+@for $i from 1 through $loops {
+  .pieTimer--#{$i} {
+    // if the index is in the first part of the circle, we apply the gradient on the right part of the circle
+    @if ($i < $half) {
+      $nextdeg: 90deg + ($increment * $i);
+      background-image: linear-gradient(90deg, $backColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $barColor 50%, $backColor 50%, $backColor);
+    }
+      // if the index is in the second part of the circle, we apply the gradient on the left part of the circle
+    @else {
+      $nextdeg: -90deg + ($increment * ($i - $half));
+      background-image: linear-gradient($nextdeg, $barColor 50%, transparent 50%, transparent), linear-gradient(270deg, $barColor 50%, $backColor 50%, $backColor);
+    }
+  }
+}
+
+.pieTimer {
+  @include size(2.2rem);
+  position: relative;
+  border: .1rem solid $backColor; // remove gradient color
+  border-radius: 50%;
+  background-color: $barColor; // default 100%
+}

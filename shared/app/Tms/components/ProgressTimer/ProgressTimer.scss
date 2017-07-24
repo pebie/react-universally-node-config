@@ -1,0 +1,22 @@
+/* PROGRESS TIMER
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+
+.progressTimer {
+  &__check {
+    @include size(2.2rem);
+    border-radius: 50%;
+    background-color: palette(mono, white);
+  }
+
+  &__icon {
+    fill: palette(theme, secondary);
+  }
+}

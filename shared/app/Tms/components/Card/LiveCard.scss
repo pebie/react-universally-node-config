@@ -1,0 +1,25 @@
+/*  LIVE CARD
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+.liveCard {
+  &__cover {
+    position: relative;
+  }
+
+  &__channel {
+    @include overlay(absolute, hslaconverter(palette(theme, primary), .3));
+
+    &__item {
+      @include centerer();
+      width: 40%;
+      text-align: center;
+    }
+  }
+}

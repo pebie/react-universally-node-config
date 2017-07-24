@@ -1,0 +1,39 @@
+/* CARDREMOVEBTN
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../../assets/base_scss/_settings';
+@import './../../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+$metaInfos:(
+  font-size: 2rem,
+  font-size-mobile: 1.6rem,
+  margin: 0
+);
+
+.cardRemoveBtn {
+  &__remove-btn-block {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    background-color: palette(mono, black);
+    opacity: .55;
+    z-index: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__remove-btn {
+    @include size(3rem);
+  }
+
+  &__remove-btn-svg {
+    fill: palette(mono, white);
+  }
+}

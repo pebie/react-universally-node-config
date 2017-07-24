@@ -1,0 +1,33 @@
+/* POSTER
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+@import './../../assets/base_scss/_animations';
+
+/* SETTINGS
+---------------------------------------------------*/
+
+//Use as default poster
+.poster {
+  @include absolute-position();
+  @include cover-background($position: center top, $size: cover);
+  display: block;
+  background-color: lighten(palette(neutral, grey-200), 7%);
+
+  //Use waiting for the data to load
+  &--loader {
+    @extend %placeHolderFade;
+  }
+
+  //Use waiting for the data to load in dark mode
+  &--dark {
+    @include absolute-position();
+    @include cover-background($position: center top, $size: cover);
+    display: block;
+    background-color: palette(neutral, grey-700);
+  }
+
+}

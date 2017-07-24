@@ -392,6 +392,7 @@ export default function webpackConfigFactory(buildOptions) {
                 ].filter(x => x != null),
 
                 plugins: [
+                  'transform-class-properties',
                   // Required to support react hot loader.
                   ifDevClient('react-hot-loader/babel'),
                   // This decorates our components with  __self prop to JSX elements,
@@ -552,6 +553,7 @@ export default function webpackConfigFactory(buildOptions) {
             // serving the client bundle as a Single Page Application through the
             // server.
             ifElse(isClient || isServer)(() => ({
+              test: new RegExp(`\\.(${config('bundleAssetTypes').join('|')})$`, 'i'),
               loader: 'file-loader',
               exclude: [/\.js$/, /\.html$/, /\.json$/],
               query: {

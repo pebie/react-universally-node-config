@@ -1,0 +1,25 @@
+/*  TIMER STATUS
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../../assets/base_scss/_settings';
+@import './../../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+.timerStatus {
+  width: 100%;
+
+  &__line {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: width 300ms;
+    border-top: .45rem solid palette(theme, secondary);
+
+    &--background {
+      border-color: palette(neutral, grey-200);
+    }
+  }
+}

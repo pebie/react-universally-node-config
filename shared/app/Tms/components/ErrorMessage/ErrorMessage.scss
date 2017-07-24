@@ -1,0 +1,24 @@
+/*  ERROR MESSAGE TEMPLATE
+---------------------------------------------------*/
+
+/* IMPORT
+-----------------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+-----------------------------------------------------------*/
+$error: (
+  secondary-color: palette(theme, secondary)
+);
+
+.errorMessage {
+  &__text {
+    font-size: 2rem;
+    font-weight: $light;
+  }
+
+  &__adult {
+    color: map-get($error, secondary-color);
+  }
+}

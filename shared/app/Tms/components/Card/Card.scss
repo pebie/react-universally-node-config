@@ -1,0 +1,164 @@
+/* CARD
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+$metaInfos:(
+  font-size: 2rem,
+  font-size-mobile: 1.6rem,
+  margin: 0
+);
+
+$labelWrapper-positions: (
+  top-right: (
+    top: 1rem,
+    right: 1rem,
+  ),
+  top-left: (
+    top: 1rem,
+    left: 1rem,
+  ),
+  bottom-right: (
+    bottom: 1rem,
+    right: 1rem,
+  ),
+  bottom-left: (
+    bottom: 1rem,
+    left: 1rem,
+  ),
+);
+
+.card {
+  color: palette(theme, primary);
+  cursor: pointer;
+
+  &--dark {
+    color: palette(mono, white);
+  }
+
+  &__metainfos {
+    position: relative;
+    padding: 1rem 0;
+    color: inherit;
+    font-size: map-get($metaInfos, font-size);
+    white-space: normal;
+
+    @include mq($until: mobile) {
+      padding: .5rem 0 0;
+      font-size: map-get($metaInfos, font-size-mobile);
+    }
+
+    &--action {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__channel {
+    position: absolute;
+    bottom: 0;
+    left: .2rem;
+    max-width: 7.7rem;
+
+    @include mq($until: mobile) {
+      @include size(5rem, 3.8rem);
+    }
+
+    &--ongoing {
+      bottom: .4rem;
+    }
+
+    &__background {
+      @include size(100%, 50%);
+      position: absolute;
+      bottom: 0;
+      left: -50%;
+      transform: rotate(30deg);
+      background: linear-gradient(360deg, rgba(palette(mono, black), .4) 0%, rgba(palette(mono, black), 0) 100%);
+    }
+  }
+
+  &__metainfosWrapper {
+    flex: 1;
+  }
+
+  &__action {
+    position: relative;
+
+    @include mq($until: mobile) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: map-get($metaInfos, font-size);
+
+    @include mq($until: mobile) {
+      font-size: map-get($metaInfos, font-size-mobile);
+    }
+  }
+
+  &__infos {
+    flex: 1;
+    padding: 0 1rem;
+
+    @include mq($until: mobile) {
+      padding: 0;
+    }
+  }
+
+  &__titleWrapper {
+    margin-bottom: 2rem;
+  }
+
+  &__timerStatus {
+    position: absolute;
+    bottom: .4rem;
+    width: 100%;
+  }
+
+  &__progressTimer {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  &__isLogo {
+    height: 100%;
+    border: 1px solid darken(palette(mono, white), 10%);
+  }
+
+  &__labelWrapper {
+    position: absolute;
+  }
+
+  @each $position, $position-map in $labelWrapper-positions {
+    &__labelWrapper--#{$position} {
+      @if map-has-key($position-map, top) {
+        top: map-get($position-map, top);
+      }
+      @if map-has-key($position-map, right) {
+        right: map-get($position-map, right);
+      }
+      @if map-has-key($position-map, bottom) {
+        bottom: map-get($position-map, bottom);
+      }
+      @if map-has-key($position-map, left) {
+        left: map-get($position-map, left);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/* TITLE
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import '../../../assets/base_scss/_settings';
+@import '../../../assets/base_scss/_utilities';
+@import '../../../assets/base_scss/_animations';
+
+/* SETTINGS
+---------------------------------------------------*/
+$titleSettings:(
+  font-size: 2rem,
+  font-size-mobile: 1.6rem,
+  margin: 0,
+  height-placeholder: 2.8rem,
+  base-color: lighten(palette(neutral, grey-200), 7%),
+  dark-color: palette(neutral, grey-500)
+);
+
+.cardTitle {
+  @include multiline-text-overflow($line-height: 2.8rem);
+
+  margin: map-get($titleSettings, margin);
+  font-size: map-get($titleSettings, font-size);
+  font-weight: $semi-bold;
+
+  @include mq($until: mobile) {
+    @include multiline-text-overflow($line-height: 2rem);
+    font-size: map-get($titleSettings, font-size-mobile);
+  }
+
+  &--dark {
+    @include multiline-text-overflow($line-height: 2.8rem, $bg-color: palette(theme, primary));
+
+    @include mq($until: mobile) {
+      @include multiline-text-overflow($line-height: 2rem, $bg-color: palette(theme, primary));
+    }
+  }
+
+  &--loader {
+    @extend %placeHolderFade;
+    width: 40%;
+    height: map-get($titleSettings, height-placeholder);
+    background-color: map-get($titleSettings, base-color);
+
+    @include mq($until: laptop) {
+      margin: 3rem 1rem 1rem;
+    }
+  }
+}

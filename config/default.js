@@ -114,6 +114,24 @@ module.exports = {
   // containing details of all output files for a bundle?
   bundleAssetsFileName: 'assets.json',
 
+  // Additional asset types to be supported for our bundles.
+  // i.e. you can import the following file types within your source and the
+  // webpack bundling process will bundle them with your source and create
+  // URLs for them that can be resolved at runtime.
+  bundleAssetTypes: [
+    'jpg',
+    'jpeg',
+    'png',
+    'gif',
+    'ico',
+    'eot',
+    'svg',
+    'ttf',
+    'woff',
+    'woff2',
+    'otf',
+  ],
+
   // node_modules are not included in any bundles that target "node" as a
   // runtime (e.g.. the server bundle) as including them often breaks builds
   // due to thinks like require statements containing expressions..

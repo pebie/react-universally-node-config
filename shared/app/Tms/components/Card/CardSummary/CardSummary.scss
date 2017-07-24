@@ -1,0 +1,13 @@
+/* SUMMARY
+---------------------------------------------------*/
+/* IMPORT
+---------------------------------------------------*/
+@import './../../../assets/base_scss/_settings';
+@import './../../../assets/base_scss/_utilities';
+/* SETTINGS
+---------------------------------------------------*/
+.cardSummary {
+  margin: 0;
+  color: palette(mono, base);
+  font-weight: 300;
+}
