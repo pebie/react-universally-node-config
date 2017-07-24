@@ -1,0 +1,384 @@
+/*  UTILITIES
+---------------------------------------------------*/
+
+/* FUNCTIONS
+---------------------------------------------------*/
+/**
+ * Deep getter into a map
+ */
+@function map-deep-get($map, $keys...) {
+  $value: $map;
+  @each $key in $keys {
+    $value: map-get($value, $key);
+  }
+  @return $value;
+}
+
+/**
+ * Color converter to hsla
+ */
+@function hslaconverter($color, $alpha) {
+  @if(type-of($color) == 'color') {
+    @return hsla(hue($color), saturation($color), lightness($color), $alpha);
+  }
+  @else {
+    @error "You didn't pass a color object";
+  }
+}
+
+/*
+ * Better function for color palettes using Sass maps
+ * Link: http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+ * Usage: color: palette(brand,tan);
+ */
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+/* MIXINS
+---------------------------------------------------*/
+/**
+ * Generate fonts
+ */
+@mixin importFont($fontName, $fileName, $isBold: false, $isLight: false) {
+  @font-face {
+    font-family: $fontName;
+
+    src: url('#{$fileName}.woff') format('woff'),
+    url('#{$fileName}.woff2') format('woff2');
+
+    font-style: normal;
+    @if $isBold {
+      font-weight: 600;
+    }
+    @else if $isLight {
+      font-weight: 300;
+    }
+    @else {
+      font-weight: normal;
+    }
+  }
+}
+
+/**
+ * Item width depending on the items length
+ */
+@mixin item-width($itemNbr) {
+  width: percentage(1 / $itemNbr);
+}
+
+/**
+ * Aspect ratio with proportional width and height
+ */
+@mixin aspect-ratio($ratio: 1 1) {
+  @if length($ratio) < 2 or length($ratio) > 2 {
+    @warn '$ratio must be a list with two values.';
+  }
+  width: 100%;
+  padding-bottom: percentage(nth($ratio, 2) / nth($ratio, 1));
+}
+
+/**
+ * Size element
+ * If height is omitted, it falls back to the width value
+ */
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/**
+ * Cover background
+ */
+@mixin cover-background($position: 50% 50%, $size: 100% 100%) {
+  background-repeat: no-repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+/**
+ * Truncate string
+ * $width - width of "ellipsis element" (shows up on the end of text); increasing this value can helps if you have problem with line wrapping, but it decrease "accuracy of detecting" the last word
+ * $padding-right - simply right padding of "ellipsis element"
+ * $line-height - should be absolute value (in px, ems etc.) and fit to line-height of cutting text
+ * $selector - container for text (in example it's paragraph); quotes required!
+ * you can use @content block to style "ellipsis element"
+ * http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+ * http://dev.mobify.com/blog/multiline-ellipsis-in-pure-css/
+ */
+
+@mixin multiline-text-overflow($line-height: 2.4rem, $lines-to-show: 2, $bg-color: white) {
+
+  overflow: hidden;
+  max-height: $line-height * $lines-to-show;
+  line-height: $line-height;
+
+  /* TODO : To plug later for the browser which not support webkit box */
+
+  /* &::before {
+    width: .5rem;
+    height: $line-height * $lines-to-show;
+    float: left;
+    content: '';
+  }
+
+  & > *:first-child {
+    width: 100%;
+    margin-left: -.5rem;
+    float: right;
+  }
+
+  &::after {
+    position: relative;
+    top: -$line-height;
+    left: 100%;
+    width: 5rem;
+    margin-left: -5rem;
+    padding-right: .5rem;
+    float: right;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), $bg-color 50%, $bg-color);
+    background-size: 100% 100%;
+    text-align: right;
+    content: '\02026';
+    box-sizing: content-box;
+  } */
+
+  /* specific css for webkit browsers */
+  /* must be separated because the browser Edge understand, and sometimes wrong, the webkit properties including -webkit-box */
+  &:not(*:root) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+
+    &::before,
+    &::after {
+      display: none;
+      content: '';
+    }
+
+    > *:first-child {
+      margin: 0;
+      float: none;
+    }
+  }
+}
+
+/**
+ * Content Grid
+ */
+@mixin grid($type: $classicGrid, $ratio: '169') {
+  @include item-width(map-deep-get($type, ratios, $ratio, wide, numberItem));
+
+  @media (max-width: map-deep-get($type, ratios, $ratio, desktop, breakpoint)) {
+    @include item-width(map-deep-get($type, ratios, $ratio, desktop, numberItem));
+  }
+
+  @media (max-width: map-deep-get($type, ratios, $ratio, laptop, breakpoint)) {
+    @include item-width(map-deep-get($type, ratios, $ratio, laptop, numberItem));
+  }
+
+  @media (max-width: map-deep-get($type, ratios, $ratio, tablet, breakpoint)) {
+    @include item-width(map-deep-get($type, ratios, $ratio, tablet, numberItem));
+  }
+
+  @media (max-width: map-deep-get($type, ratios, $ratio, tabletPortrait, breakpoint)) {
+    @include item-width(map-deep-get($type, ratios, $ratio, tabletPortrait, numberItem));
+  }
+
+  @media (max-width: map-deep-get($type, ratios, $ratio, mobile, breakpoint)) {
+    @include item-width(map-deep-get($type, ratios, $ratio, mobile, numberItem));
+  }
+}
+
+/**
+ * Button with border-radius
+ */
+@mixin btn-theme($bgColor, $textColor) {
+  display: inline-block;
+  margin: 1.5rem 3rem 0;
+  padding: 1.2rem 3.2rem;
+  transition: background-color 200ms ease-in-out;
+  border-radius: 2.45rem;
+  background-color: $bgColor;
+  color: $textColor;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  @include mq($until: mobile) {
+    margin-top: 0;
+  }
+
+  &:hover {
+    background-color: lighten($bgColor, 5%);
+    cursor: pointer;
+  }
+}
+
+/**
+ * Tooltip
+ * if you use tooltip, please add to the parent "position" at "relative"
+ */
+@mixin tooltip($bgColor, $textColor, $size, $marginLeft, $bottom) {
+  display: none;
+  position: absolute;
+  bottom: $bottom;
+  left: 50%;
+  width: $size;
+  margin-bottom: -1rem;
+  margin-left: $marginLeft;
+  padding: 1rem;
+  border-radius: .3rem;
+  background-color: $bgColor;
+  color: $textColor;
+  text-align: center;
+  z-index: 1;
+  font-size: 1.8rem;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -.5rem;
+    border-width: .5rem;
+    border-style: solid;
+    border-color: $bgColor transparent transparent;
+    content: '';
+  }
+}
+
+/**
+ *  Align content
+ */
+@mixin centerer($direction: both) {
+  position: absolute;
+  @if $direction == both {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  @else if $direction == horizontal {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @else if $direction == vertical {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/**
+ * Absolute position with all position set to 0
+ */
+@mixin absolute-position($position: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/**
+ * Overlay
+ */
+@mixin overlay($position, $bgColor) {
+  @include absolute-position($position);
+  background: $bgColor;
+}
+
+/**
+ * Placeholder background color for grids
+ */
+@mixin placeholder-bg-color($mainColor, $middleColor) {
+  background: $mainColor;
+  background-image: linear-gradient(to right, #{$mainColor} 0%, #{$middleColor} 18%, #{$mainColor} 50%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/*
+ * Provide a hover effect for non-touch devices, turn it into an Active state for mobile, and maintain a fallback.
+ * @requires Modernizr as a JS dependency to get .no-touchevents and .touchevents classes
+ * Adds styles via @content
+ */
+@mixin touch-hover() {
+  :global html:not(.no-touchevents):not(.touchevents) :local &:hover,  // the fallback
+  :global html:not(.no-touchevents):not(.touchevents) :local &:focus,
+  :global .no-touchevents :local &:hover, // enhanced for no-touch
+  :global .no-touchevents :local &:focus,
+  :global .touchevents :local &:active { // relay same styles to active for touch devices
+    @content;
+  }
+}
+
+//HACK hide firefox scrollbar
+@mixin firefoxScrollbar() {
+  @media screen and (min--moz-device-pixel-ratio:0) {
+    margin-bottom: -2rem !important;
+    padding-bottom: 2rem;
+  }
+}
+
+/**
+ * Responsive Grid SASS mixin
+ *
+ * NOTE sass-mq has to be used for breakpoints rules
+ * Grid items elements must have `data-ratio` attribute with ratio value.
+*/
+@function getGridItemWidth($ratioConfig, $breakpoint) {
+  $cols: map-get($ratioConfig, $breakpoint);
+  @if $cols != null {
+    @return percentage(1 / $cols);
+  }
+
+  @return null;
+}
+
+@mixin responsiveGrid($config) {
+  @each $ratio in map-keys($config) {
+    $ratioConfig: map-get($config, $ratio);
+
+    &[data-ratio~="#{$ratio}"] {
+      width: getGridItemWidth($ratioConfig, mobile);
+
+      @include mq(mobile, tablet) {
+        width: getGridItemWidth($ratioConfig, tablet);
+      }
+
+      @include mq(tablet, laptop) {
+        width: getGridItemWidth($ratioConfig, laptop);
+      }
+
+      @include mq(laptop, desktop) {
+        width: getGridItemWidth($ratioConfig, desktop);
+      }
+
+      @include mq($from: desktop) {
+        width: getGridItemWidth($ratioConfig, wide);
+      }
+    }
+  }
+}
+
+@mixin paddingPages($paddingConfig) {
+  padding: map-get($paddingConfig, padding-for-wide);
+
+  @include mq($until: desktop) {
+    padding: map-get($paddingConfig, padding-for-desktop);
+  }
+
+  @include mq($until: tablet) {
+    padding: map-get($paddingConfig, padding-for-small);
+  }
+}
+
+@mixin marginGridItems($marginItemsConfig) {
+  margin: map-get($marginItemsConfig, margin-for-wide);
+
+  @include mq($until: desktop) {
+    margin: map-get($marginItemsConfig, margin-for-desktop);
+  }
+
+  @include mq($until: tablet) {
+    margin: map-get($marginItemsConfig, margin-for-small);
+  }
+}

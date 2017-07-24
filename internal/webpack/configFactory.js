@@ -60,6 +60,8 @@ export default function webpackConfigFactory(buildOptions) {
     throw new Error('No bundle configuration exists for target:', target);
   }
 
+  const localIdentName = ifDev('[name]_[local]_[hash:base64:5]', '[hash:base64:10]');
+
   let webpackConfig = {
     // Define our entry chunks for our bundle.
     entry: {
@@ -422,11 +424,25 @@ export default function webpackConfigFactory(buildOptions) {
         happyPackPlugin({
           name: 'happypack-devclient-css',
           loaders: [
+            'classnames-loader',
             'style-loader',
             {
               path: 'css-loader',
               // Include sourcemaps for dev experience++.
-              query: { sourceMap: true },
+              query: {
+                sourceMap: true,
+                module: true,
+                importLoaders: 1,
+                localIdentName,
+              },
+            },
+            { path: 'postcss-loader' },
+            {
+              path: 'sass-loader',
+              options: {
+                outputStyle: 'expanded',
+                sourceMap: true,
+              },
             },
           ],
         }),
@@ -465,7 +481,7 @@ export default function webpackConfigFactory(buildOptions) {
             ifElse(isClient || isServer)(
               mergeDeep(
                 {
-                  test: /\.css$/,
+                  test: /(\.scss|\.css)$/,
                 },
                 // For development clients we will defer all our css processing to the
                 // happypack plugin named "happypack-devclient-css".
@@ -483,16 +499,40 @@ export default function webpackConfigFactory(buildOptions) {
                 ifProdClient(() => ({
                   loader: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader'],
+                    use: [
+                      `css-loader?modules=1&importLoaders=1&localIdentName=${localIdentName}`,
+                      'postcss-loader',
+                      'sass-loader?outputStyle=expanded',
+                    ],
                   }),
                 })),
                 // When targetting the server we use the "/locals" version of the
                 // css loader, as we don't need any css files for the server.
                 ifNode({
-                  loaders: ['css-loader/locals'],
+                  loaders: [
+                    'classnames-loader',
+                    `css-loader/locals?modules=1&sourceMap&importLoaders=1&localIdentName=${localIdentName}`,
+                    'postcss-loader',
+                    'sass-loader?outputStyle=expanded&sourceMap',
+                  ],
                 }),
               ),
             ),
+
+            // Dont CSS modules on css files from node_modules folder
+            ifElse(isClient || isServer)({
+              test: /node_modules.*\.css$/,
+              use: ifProdClient(
+                ExtractTextPlugin.extract({
+                  fallback: 'style-loader',
+                  use: ['css-loader', 'postcss-loader'],
+                }),
+                [
+                  ...ifNode(['css-loader/locals'], ['style-loader', 'css-loader']),
+                  'postcss-loader',
+                ],
+              ),
+            }),
 
             // MODERNIZR
             // This allows you to do feature detection.

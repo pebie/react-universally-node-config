@@ -1,0 +1,34 @@
+/*  GENERAL
+---------------------------------------------------*/
+
+/* SETTINGS
+-----------------------------------------------------------*/
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+:global {
+  @include mq($until: tablet) {
+    .header-wrapper--my-canal {
+      header,
+      .sideMenu--my-canal {
+        z-index: $zIndex-5;
+      }
+    }
+  }
+
+  .header-wrapper--my-canal,
+  .footer--my-canal,
+  .header--my-canal {
+    z-index: $zIndex-5;
+  }
+
+  // scss-lint:disable IdSelector
+  #application {
+    height: 100%;
+  }
+
+  .noscroll {
+    overflow: hidden;
+  }
+}

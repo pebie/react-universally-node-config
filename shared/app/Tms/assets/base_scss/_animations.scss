@@ -1,0 +1,54 @@
+/* ANIMATION
+---------------------------------------------------*/
+
+/* SETTINGS
+-----------------------------------------------------------*/
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -30rem 0;
+  }
+
+  100% {
+    background-position: 30rem 0;
+  }
+}
+
+@keyframes placeHolderFade {
+  0% {
+    opacity: .4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .4;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+%placeHolderShimmer {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+}
+
+%placeHolderFade {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderFade;
+  animation-timing-function: linear;
+}

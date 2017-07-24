@@ -1,0 +1,104 @@
+/*  BASE SETTINGS
+---------------------------------------------------*/
+
+// IMPORTS
+// -----------------------------------------------------------
+@import '../../../../../node_modules/sass-mq/_mq';
+
+// FONTS
+// -----------------------------------------------------------
+$semi-bold: 600 !default;
+$regular: 400 !default;
+$light: 300 !default;
+
+$base-font-family: 'Open Sans', 'San Francisco', 'Roboto', 'Arial', sans-serif !default;
+$base-font-weight: $regular !default;
+$base-font-style: normal !default;
+
+$fonts-path: '../../../public/fonts';
+
+// COLORS
+// -----------------------------------------------------------
+$palettes: (
+  mono: (
+    white: hsl(0, 0%, 100%),        //#ffffff
+    base: hsl(0, 0%, 60%),          //#999999
+    black: hsl(0, 0%, 0%),          //#000000
+  ),
+
+  theme: (
+    primary: hsl(0, 0%, 11%),       //#1C1C1C
+    secondary: hsl(350, 83%, 57%),  //#ec3655
+  ),
+
+  /*
+   * Based on the material design color system
+   * https://material.google.com/style/color.html
+   */
+  neutral: (
+    grey-100: hsl(0, 0%, 96%),      //#F5F5F5
+    grey-200: hsl(220, 14%, 88%),   //#dbdee4
+    grey-300: hsl(218, 7%, 78%),    //#C3C6CB
+    grey-400: hsl(215, 6%, 39%),    //#5d6269
+    grey-500: hsl(0, 0%, 28%),      //#474747
+    grey-600: hsl(213, 12%, 12%),   //#1B1E22
+    grey-700: hsl(220, 12%, 10%),   //#16181C
+    grey-800: hsl(346, 35%, 7%)     //#180C0F
+  ),
+
+  brand: (
+    twitter: hsl(196, 100%, 46%),   //#00aceb
+    facebook: hsl(221, 44%, 41%),   //#3b5897
+    telerama: hsl(356, 95%, 46%),   //#E30613
+    allocine: hsl(47, 90%, 50%)     //#F2C10D
+  ),
+
+  action: (
+    success: hsl(128, 85%, 57%),    //#34ee4e
+  ),
+
+  mood: (
+    neutral: hsl(220, 14%, 88%),    //#dbdee4
+    like: hsl(157, 79%, 42%),       //#16bf7d
+    dislike: hsl(350, 83%, 57%),    //#ec3655
+  ),
+  tvod: (
+    primary: hsl(310, 67%, 34%),    //#8F1C7B
+  )
+) !default;
+
+// RESPONSIVE
+// Mobile first responsive approach with MQ from the Guardian
+// http://www.theguardian.com/info/developer-blog/2013/oct/14/mobile-first-responsive-ie8
+// -----------------------------------------------------------
+$mq-show-breakpoints:                   ();
+
+$mq-breakpoints: (
+  mobile:                             700px,
+  tablet:                             961px,
+  laptop:                             1285px,
+  desktop:                            1600px,
+  wide:                               1920px,
+);
+
+$mq-breakpoints-height:               800px;
+
+// Size settings
+// -----------------------------------------------------------
+$header-height: 6.25rem !default;
+$header-mobile-height: 9rem !default;
+$footer-height: 24.2rem !default;
+$footer-mobile-height: 17.8rem !default;
+
+// Z-Index Scale
+// --------------------------------------------------
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;

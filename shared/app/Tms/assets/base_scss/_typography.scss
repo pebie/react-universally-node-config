@@ -1,0 +1,114 @@
+/*  TYPOGRAPHY
+---------------------------------------------------*/
+
+/* SETTINGS
+-----------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+  font-size: 62.5%; // Set baseline font size to 10px, This is used as a baseline for rem (root ems) values
+  font-size: calc(1em * .625); // For IE11 to do the math properly, See http://bit.ly/1g4X0bX
+
+  /* If the workaround solution for IE11 does not work in every case, so we fix in 10px */
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    font-size: 10px;
+  }
+}
+
+body {
+  position: relative;
+  background: palette(mono, white);
+  color: palette(theme, primary);
+  font-family: 'Arial', sans-serif;
+  font-size: 1.6em; // Bump font-size back up to 16px
+  font-style: $base-font-style;
+  font-weight: $base-font-weight;
+  line-height: 1.4;
+
+  &:fullscreen {
+    width: 100%;
+  }
+
+}
+
+:global .fonts-loaded {
+  font-family: $base-font-family;
+}
+
+// Get rid of gap under images by making them display: inline-block; by default
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// Links
+// -----------------------------------------------------------
+a {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  tap-highlight-color: transparent;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  img { border: 0; }
+}
+
+// Buttons
+// -----------------------------------------------------------
+button {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+// Code
+// -----------------------------------------------------------
+pre,
+code {
+  font-family: 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+// Fonts
+// -----------------------------------------------------------
+@media only screen and (min-device-width : map-get($mq-breakpoints, mobile)) {
+  @include importFont('Open Sans', '#{$fonts-path}/opensans-semibold', $isBold: true);
+  @include importFont('Open Sans', '#{$fonts-path}/opensans-regular');
+  @include importFont('Open Sans', '#{$fonts-path}/opensans-light', $isLight: true);
+}

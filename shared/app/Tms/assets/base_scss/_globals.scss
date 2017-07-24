@@ -1,0 +1,27 @@
+/* GLOBALS
+ *
+ * These are globally available css classes that will
+ * not be "modulized" by css modules and thus can be
+ * used to render styled component created by the BO
+---------------------------------------------------*/
+
+:global {
+  .button-primary {
+    margin: 0;
+    padding: 1.2rem 3.2rem;
+    transition: background-color 200ms ease-out;
+    border: 0;
+    border-radius: 2.45rem;
+    background-color: palette(theme, secondary);
+    color: palette(mono, white);
+    font-family: $base-font-family;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      background-color: lighten(palette(theme, secondary), 5%); //ef4e68
+      cursor: pointer;
+    }
+  }
+}

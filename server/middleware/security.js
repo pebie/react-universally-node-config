@@ -13,6 +13,7 @@ const cspConfig = {
     defaultSrc: ["'self'"],
     imgSrc: [
       "'self'",
+      'thumb.canalplus.pro',
       // If you use Base64 encoded images (i.e. inlined images), then you will
       // need the following:
       // 'data:',
