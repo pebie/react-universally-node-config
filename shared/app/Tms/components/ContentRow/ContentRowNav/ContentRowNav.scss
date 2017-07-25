@@ -1,0 +1,35 @@
+/*  CAROUSEL BUTTON
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../../assets/base_scss/_settings';
+@import './../../../assets/base_scss/_utilities';
+
+.contentRowNav {
+  @include size(7rem, 9rem);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  transition: opacity ease-in 250ms;
+  border: 0;
+  background: palette(mono, white);
+  color: palette(mono, black);
+  opacity: .8;
+  -webkit-appearance: none;
+
+  @include touch-hover() {
+    opacity: 1;
+  }
+
+  &--next {
+    transform: scaleX(-1); /* use the same component as prev arrow */
+  }
+
+  *:only-child {
+    @include size(2.6rem, 5rem);
+    @include centerer();
+    outline: 0;
+    content: '';
+  }
+}

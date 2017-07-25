@@ -8,10 +8,8 @@ import isEqual from 'lodash/isEqual'; // TODO remove disable rule
  * @param  {object} nextProps the props your component will receive
  * @return {bool}   true if they are different, false if they aren't
  */
-/* eslint-disable import/prefer-default-export */ export const areNextPropsDifferent = (
-  props,
-  nextProps,
-) => {
+/* eslint-disable import/prefer-default-export */
+export const areNextPropsDifferent = (props, nextProps) => {
   const handleLater = [];
   const keys = Object.keys(props);
   let currentKey;

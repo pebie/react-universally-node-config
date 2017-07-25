@@ -5,6 +5,7 @@ import FontFaceObserver from 'fontfaceobserver';
 import './assets/base_scss/__base.scss';
 import MosaicContainer from './components/Mosaic/MosaicContainer';
 import ContentGridContainer from './components/ContentGrid/ContentGridContainer';
+import ContentRowContainer from './components/ContentRow/ContentRowContainer';
 
 class RenderingEngine extends Component {
   componentDidMount() {
@@ -40,12 +41,16 @@ class RenderingEngine extends Component {
       <span>
         <h1 style={{ textAlign: 'center' }}>TMS RenderingEngine</h1>
         <ul>
+          <li key={3}>
+            <h2 style={{ paddingLeft: '30px' }}>ContentRow</h2>
+            <ContentRowContainer />
+          </li>
           <li key={1}>
-            <h2 style={{ paddingLeft: '30px' }}>Mosaic Template</h2>
+            <h2 style={{ paddingLeft: '30px' }}>Mosaic</h2>
             <MosaicContainer />
           </li>
           <li key={2}>
-            <h2 style={{ paddingLeft: '30px' }}>ContentGrid Template</h2>
+            <h2 style={{ paddingLeft: '30px' }}>ContentGrid</h2>
             <ContentGridContainer />
           </li>
         </ul>

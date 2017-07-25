@@ -1,0 +1,100 @@
+{
+   "contents": [
+    {
+      "type": "folder",
+      "contentID": "creplay_them_jeunesse_playlistdesgrandesvacances_3",
+      "URLImage": "https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/59391109",
+      "CSA": 1,
+      "onClick": {
+        "displayTemplate": "contentGrid",
+        "displayName": "La Playlist des Grandes Vacances",
+        "URLPage": "https://hodor.canalplus.pro/api/v1/contentGrid/b8b9c761bc21ef3b135f125010618d8d/creplay_them_jeunesse_playlistdesgrandesvacances_3;Dai.json?params%5BdetailType%5D=contentGrid&objectType=list&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true&titleDisplayMode=none",
+        "BOName": "La Playlist des Grandes Vacances",
+        "path": "/la-playlist-des-grandes-vacances/h/creplay_them_jeunesse_playlistdesgrandesvacances_3"
+      }
+    },
+    {
+      "type": "folder",
+      "contentID": "creplay_liste_jeunesse_teslivressaniment",
+      "URLImage": "https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/59145995",
+      "CSA": 1,
+      "onClick": {
+        "displayTemplate": "contentGrid",
+        "displayName": "Tes livres s'animent",
+        "URLPage": "https://hodor.canalplus.pro/api/v1/contentGrid/b8b9c761bc21ef3b135f125010618d8d/creplay_liste_jeunesse_teslivressaniment;E2h.json?params%5BdetailType%5D=contentGrid&objectType=list&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true&titleDisplayMode=none",
+        "BOName": "Tes livres s'animent",
+        "path": "/tes-livres-s-animent/h/creplay_liste_jeunesse_teslivressaniment"
+      }
+    },
+    {
+      "type": "folder",
+      "contentID": "7227372_50011",
+      "URLImage": "https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/59201489",
+      "URLLogoChannel": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40039_288_218.png",
+      "CSA": 1,
+      "onClick": {
+        "displayTemplate": "detailSeason",
+        "displayName": "Les as de la jungle à la rescousse - S1",
+        "URLPage": "https://hodor.canalplus.pro/api/v1/detail/b8b9c761bc21ef3b135f125010618d8d/okapi/7227372_50011;2mVH;7W51c0rtcs.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true&titleDisplayMode=none",
+        "BOName": "Les as de la jungle à la rescousse - S1",
+        "path": "/jeunesse/les-as-de-la-jungle-a-la-rescousse/h/4443309_50011"
+      }
+    },
+    {
+      "type": "VoD",
+      "contentID": "7151365_50001",
+      "URLImage": "https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/58814787",
+      "URLLogoChannel": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+      "CSA": 1,
+      "onClick": {
+        "displayTemplate": "detailPage",
+        "displayName": "Comme des bêtes",
+        "URLPage": "https://hodor.canalplus.pro/api/v1/detail/b8b9c761bc21ef3b135f125010618d8d/okapi/7151365_50001;3Vtn;7VclqYgsab.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true&titleDisplayMode=none",
+        "BOName": "Comme des bêtes",
+        "path": "/cinema/comme-des-betes/h/7151365_50001"
+      }
+    },
+    {
+      "type": "VoD",
+      "contentID": "5281800_50002",
+      "URLImage": "https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/54545302",
+      "URLLogoChannel": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40008_288_218.png",
+      "CSA": 1,
+      "onClick": {
+        "displayTemplate": "detailPage",
+        "displayName": "Les Minions",
+        "URLPage": "https://hodor.canalplus.pro/api/v1/detail/b8b9c761bc21ef3b135f125010618d8d/okapi/5281800_50002;2O11;7TX44p80qH.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true&titleDisplayMode=none",
+        "BOName": "Les Minions",
+        "path": "/cinema/les-minions/h/5281800_50002"
+      }
+    },
+    {
+      "type": "folder",
+      "contentID": "4463166_50001",
+      "URLImage": "https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/59145556",
+      "URLLogoChannel": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40052_288_218.png",
+      "CSA": 1,
+      "onClick": {
+        "displayTemplate": "detailSeason",
+        "displayName": "Les Dalton - S4",
+        "URLPage": "https://hodor.canalplus.pro/api/v1/detail/b8b9c761bc21ef3b135f125010618d8d/okapi/4463166_50001;1nAY;7W51c0rsJq.json?params%5BdetailType%5D=detailSeason&objectType=season&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true&titleDisplayMode=none",
+        "BOName": "Les Dalton - S4",
+        "path": "/jeunesse/les-dalton/h/4443300_50001"
+      }
+    },
+    {
+      "type": "VoD",
+      "contentID": "286010_50019",
+      "URLImage": "https://thumb.canalplus.pro/bddpe/unsafe/{resolutionXY}/58906345",
+      "URLLogoChannel": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/image.canal-plus.com/media_cpa/img/channel/white/288_218/png/40055_288_218.png",
+      "CSA": 1,
+      "onClick": {
+        "displayTemplate": "detailPage",
+        "displayName": "Mulan",
+        "URLPage": "https://hodor.canalplus.pro/api/v1/detail/b8b9c761bc21ef3b135f125010618d8d/okapi/286010_50019;1xOw;7VsnM8cNpl.json?params%5BdetailType%5D=detailPage&objectType=unit&params%5Bdsp%5D=detailPage&params%5Bsdm%5D=show&params%5Bhighlight%5D=false&displayLogo=true&titleDisplayMode=none",
+        "BOName": "Mulan",
+        "path": "/cinema/mulan/h/286010_50019"
+      }
+    }
+  ]
+}

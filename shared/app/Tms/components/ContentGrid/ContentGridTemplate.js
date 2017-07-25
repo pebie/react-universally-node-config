@@ -19,7 +19,6 @@ import styles from './ContentGridTemplate.scss';
  * @param {string} pagingUrl url to fetch next contents given by TMS
  * @param {func} onPaging function to fetch next contents during pagination
  * @param {number} nbPlaceholderItems number of placeholders to display
- * @param {string} listType List type of the Cards on the Grid
  * @param {string} token token
  * @param {number} strateNumber index of the strate in the array
  */
@@ -31,7 +30,6 @@ export default class ContentGridTemplate extends Component {
     onPaging: PropTypes.func,
     pagingUrl: PropTypes.string.isRequired,
     nbPlaceholderItems: PropTypes.number.isRequired,
-    listType: PropTypes.string,
     token: PropTypes.string,
     strateNumber: PropTypes.number,
   };
@@ -42,7 +40,6 @@ export default class ContentGridTemplate extends Component {
     onPaging: () => {},
     pagingUrl: '',
     nbPlaceholderItems: 10,
-    listType: '',
     token: '',
     strateNumber: 0,
   };
@@ -58,7 +55,6 @@ export default class ContentGridTemplate extends Component {
       pagingUrl,
       onPaging,
       nbPlaceholderItems,
-      listType,
       token,
       strateNumber,
     } = this.props;
@@ -67,11 +63,11 @@ export default class ContentGridTemplate extends Component {
     const clonedContents = pagingUrl ? contents.concat([...Array(nbPlaceholderItems)]) : contents;
 
     return clonedContents.map((content, index) =>
-      (<li className={styles.contentGrid__gridItem} key={index} data-ratio={ratio}>
+      (<li className={styles.contentGrid__gridItem} key={content.id} data-ratio={ratio}>
         <ContentGridTemplateItem
           content={content}
           ratio={ratio}
-          listType={listType}
+          contentType={content.type}
           token={token}
           strateNumber={strateNumber}
         />

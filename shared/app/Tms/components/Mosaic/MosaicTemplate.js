@@ -14,8 +14,8 @@ import { ALL_SUPPORTED_RATIOS } from '../../constants/ratios';
  * @param {number} ratio ratio used for image sizes
  */
 const MosaicTemplate = ({ contents, ratio }) => {
-  const items = contents.map((content, index) =>
-    (<li className={styles.mosaic__gridItem} key={index} data-ratio={ratio}>
+  const items = contents.map(content =>
+    (<li className={styles.mosaic__gridItem} key={content.id} data-ratio={ratio}>
       <MosaicTemplateItem content={content} ratio={ratio} />
     </li>),
   );

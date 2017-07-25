@@ -10,7 +10,10 @@ export default (key) => {
     /* eslint-disable no-underscore-dangle */
     return get(window.__CLIENT_CONFIG__, key);
   }
-  return require('config').get(key);
+  if (require('config').has(key)) {
+    return require('config').get(key);
+  }
+  return '';
 };
 
 /**

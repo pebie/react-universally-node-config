@@ -1,0 +1,96 @@
+/*  HORIZONTAL SCROLLER
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+$paddingConfig:(
+  padding-for-wide: 0 4rem,
+  padding-for-desktop: 0 2.5rem,
+  padding-for-small: 0 1.25rem
+);
+
+@mixin space-item() {
+  margin-right: 4rem;
+
+  @include mq($until: desktop) {
+    margin-right: 2.5rem;
+  }
+
+  @include mq($until: tablet) {
+    margin-right: 1.25rem;
+  }
+}
+
+.horizontalScroller {
+  @include size(100%, auto);
+  position: relative;
+  font-size: 0; /* fix space between inline--block elements */
+  overflow: hidden;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+
+  &__track {
+    @include firefoxScrollbar();
+    @include paddingPages($paddingConfig);
+    // TODO: all the padding should not be here, but no solution for the moment :(
+    white-space: nowrap;
+    z-index: 2;
+    overflow-y: hidden;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* There ara an existing bug with the use of white-space and padding on element on IE and FF
+    * HACK to add space at the end of the list (no better solution for the moment)
+    */
+    li:last-child {
+      @media screen and (min--moz-device-pixel-ratio:0) {
+        @include space-item();
+      }
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @include space-item();
+      }
+
+      @supports (-ms-ime-align:auto) {
+        @include space-item();
+      }
+    }
+  }
+
+  &__prevButton,
+  &__nextButton {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: -1;
+
+    @include mq($until: tablet) {
+      display: none;
+    }
+
+    &--active {
+      transition: opacity ease-in 250ms;
+      opacity: 1;
+      z-index: 3;
+    }
+  }
+
+  &__prevButton {
+    left: 0;
+  }
+
+  &__nextButton {
+    right: 0;
+  }
+}

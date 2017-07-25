@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import get from 'lodash/get';
-import Linker from './../Linker/Linker';
 import Card from '../Card/Card';
 import ActorPlaceholder from '../../assets/images/actorplaceholder.jpg';
 import { isARemovableContent } from '../../helpers/contents';
@@ -14,7 +13,7 @@ import { isARemovableContent } from '../../helpers/contents';
  * @param {object} content data from TMS to render component
  * @param {number} ratio ratio used for image sizes
  * @param {func}   onClickCrossButton function called when cross button is clicked
- * @param {string} listType The type list of the Strate
+ * @param {string} contentType  type of content
  * @param {string} token token
  * @param {number} strateNumber The index of the strate in the array
  */
@@ -22,7 +21,7 @@ const ContentGridTemplateItem = ({
   content,
   ratio,
   onClickCrossButton,
-  listType,
+  contentType,
   token,
   strateNumber,
 }) => {
@@ -40,25 +39,21 @@ const ContentGridTemplateItem = ({
   const image = isPersonnality ? ActorPlaceholder : URLImage;
 
   return (
-    <Linker data={content} title={title}>
-      {
-        <Card
-          image={image}
-          logoChannel={logoChannel}
-          ratio={ratio}
-          title={title}
-          subtitle={subtitle}
-          onGoing={onGoing}
-          imageSpecificities={imageSpecificities}
-          listType={listType}
-          token={token}
-          onClickCrossButton={onClickCrossButton}
-          contentID={content.contentID}
-          strateNumber={strateNumber}
-          isRemovableItem={isARemovableContent({ perso: listType })}
-        />
-      }
-    </Linker>
+    <Card
+      image={image}
+      logoChannel={logoChannel}
+      ratio={ratio}
+      title={title}
+      subtitle={subtitle}
+      onGoing={onGoing}
+      imageSpecificities={imageSpecificities}
+      contentType={contentType}
+      token={token}
+      onClickCrossButton={onClickCrossButton}
+      contentID={content.contentId}
+      strateNumber={strateNumber}
+      isRemovableItem={isARemovableContent({ perso: contentType })}
+    />
   );
 };
 
@@ -78,14 +73,14 @@ ContentGridTemplateItem.propTypes = {
   ratio: PropTypes.number.isRequired,
   token: PropTypes.string,
   onClickCrossButton: PropTypes.func,
-  listType: PropTypes.string,
+  contentType: PropTypes.string,
   strateNumber: PropTypes.number,
 };
 
 ContentGridTemplateItem.defaultProps = {
   token: '',
   onClickCrossButton: () => {},
-  listType: '',
+  contentType: '',
   strateNumber: 0,
 };
 

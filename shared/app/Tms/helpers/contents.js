@@ -18,3 +18,17 @@ export const isARemovableContent = ({ perso }) => REMOVABLE_TYPES.indexOf(perso)
  */
 
 export const isOnGoing = onGoing => onGoing && onGoing.startTime && onGoing.endTime;
+
+/**
+ * setContentId
+ * When mapping contents in react component we need to set a key for react-id.
+ * Passing index to key is not conventional (see no-array-index eslint rules).
+ * We need to bind index to a content field.
+ * @param {array} contents array of contents
+ */
+export const setContentId = contents =>
+  contents.map(
+    (content, index) =>
+      /* eslint-disable no-param-reassign */
+      (content.id = index),
+  );

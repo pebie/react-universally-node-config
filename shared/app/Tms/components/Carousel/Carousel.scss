@@ -1,0 +1,88 @@
+/*  CAROUSEL
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+.carousel {
+  @include size(100%, auto);
+  @include firefoxScrollbar();
+  position: relative;
+  font-size: 0; /* fix space between inline--block elements */
+  overflow: hidden;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+
+  &__track {
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 2;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+  }
+
+  &__prevButton,
+  &__nextButton {
+    @include centerer(vertical);
+    cursor: pointer;
+    opacity: 0;
+    z-index: -1;
+
+    @include mq($until: tablet) {
+      display: none;
+    }
+
+    &--active {
+      transition: opacity ease-in 250ms;
+      opacity: 1;
+      z-index: 3;
+    }
+  }
+
+  &__prevButton {
+    left: 0;
+  }
+
+  &__nextButton {
+    right: 0;
+  }
+
+  &__dots {
+    @include centerer(horizontal);
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  &__dotsItem {
+    @include size(1rem);
+    margin: 0 .25rem;
+    transition: background 250ms ease;
+    border-radius: 50%;
+    background: rgba(palette(neutral, grey-300), .7);
+    box-shadow: .1rem .1rem .1rem 0 rgba(palette(mono, black), .8);
+
+    @include mq($from: tablet) {
+      display: none;
+    }
+
+    &--active {
+      background: rgba(palette(mono, white), 1);
+    }
+  }
+}

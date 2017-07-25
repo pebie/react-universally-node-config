@@ -185,10 +185,7 @@ Card.defaultProps = {
   onClick: () => {},
   action: null,
   getPosterRef: () => {},
-  profileProgress: {
-    isInHistory: false,
-    userProgress: 0,
-  },
+  profileProgress: null,
   ratio: 169,
   dark: false,
   displaySubtitlePlaceholder: false,

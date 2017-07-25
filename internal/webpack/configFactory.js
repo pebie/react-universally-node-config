@@ -33,6 +33,7 @@ export default function webpackConfigFactory(buildOptions) {
   const isClient = target === 'client';
   const isServer = target === 'server';
   const isNode = !isClient;
+  const hasCustomConfig = require('config').has('renderingEngine.config');
 
   // Preconfigure some ifElse helper instnaces. See the util docs for more
   // information on how this util works.
@@ -177,7 +178,10 @@ export default function webpackConfigFactory(buildOptions) {
       alias: {
         modernizr$: path.resolve(appRootDir.get(), './.modernizrrc'),
         RenderingEngine: path.resolve(appRootDir.get(), config('renderingEngine.entry')),
-        RenderingEngineConfig: path.resolve(appRootDir.get(), config('renderingEngine.config')),
+        RenderingEngineConfig: ifElse(hasCustomConfig)(
+          path.resolve(appRootDir.get(), config('renderingEngine.config')),
+          path.resolve(appRootDir.get(), './config/components/FallbackConfig'),
+        ),
       },
     },
 

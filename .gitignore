@@ -47,3 +47,4 @@ flow-coverage/
 
 # Config
 config/local.js
+**/local.js

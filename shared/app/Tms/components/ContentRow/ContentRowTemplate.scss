@@ -1,0 +1,101 @@
+/*  CONTENT ROW
+---------------------------------------------------*/
+
+/* IMPORT
+---------------------------------------------------*/
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+/* SETTINGS
+---------------------------------------------------*/
+$marginHeader:(
+  margin-for-wide: 0 5rem,
+  margin-for-desktop: 0 3rem,
+  margin-for-small: 0 1.5rem
+);
+
+$contentRowConfig: (
+  "166": (
+    mobile: 1,
+    tablet: 2,
+    laptop: 3,
+    desktop: 3,
+    wide: 4
+  ),
+  "169": (
+    mobile: 2,
+    tablet: 3,
+    laptop: 4,
+    desktop: 5,
+    wide: 6
+  ),
+  "34": (
+    mobile: 3,
+    tablet: 4,
+    laptop: 6,
+    desktop: 7,
+    wide: 8
+  )
+);
+
+$marginItemsConfig:(
+  margin-for-wide: 1rem,
+  margin-for-desktop: .5rem,
+  margin-for-small: .25rem
+);
+
+.contentRow {
+  &__header {
+    margin: map-get($marginHeader, margin-for-wide); // to keep align title & contents in carousel
+
+    @include mq($until: desktop) {
+      margin: map-get($marginHeader, margin-for-desktop);
+    }
+
+    @include mq($until: tablet) {
+      margin: map-get($marginHeader, margin-for-small);
+    }
+
+    &--166 {
+      @include mq($until: mobile) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__carouselItem166 {
+    @include aspect-ratio(1920 720);
+  }
+
+  &__carouselContainer {
+    margin: 1rem 0 0;
+  }
+
+  &__carouselMobile {
+    display: none;
+
+    @include mq($until: mobile) {
+      display: block;
+    }
+  }
+
+  &__carouselDesktop {
+    display: block;
+
+    @include mq($until: mobile) {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include responsiveGrid($contentRowConfig);
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+  }
+}
+
+.contentRowItem {
+  @include marginGridItems($marginItemsConfig);
+  display: block;
+}

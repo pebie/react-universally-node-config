@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import get from 'lodash/get';
-import Linker from './../Linker/Linker';
 import RatioHandler from './../RatioHandler/RatioHandler';
 import Channel from './../Channel/Channel';
 import ChannelPlaceholder from './../Channel/ChannelPlaceholder';
@@ -20,11 +19,9 @@ const MosaicTemplateItem = ({ content, ratio }) => {
 
   if (content) {
     return (
-      <Linker data={content} title={name}>
-        <RatioHandler ratio={ratio}>
-          <Channel name={name} logoUrl={logoUrl} />
-        </RatioHandler>
-      </Linker>
+      <RatioHandler ratio={ratio}>
+        <Channel name={name} logoUrl={logoUrl} />
+      </RatioHandler>
     );
   }
 

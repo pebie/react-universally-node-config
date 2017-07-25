@@ -62,6 +62,7 @@ function ServerHTML(props) {
     // client bundle that gets executed in the browser.
     <ClientConfig nonce={nonce} />,
     // And a custom one :)
+
     <RenderingEngineConfig nonce={nonce} />,
     // Bind our async components state so the client knows which ones
     // to initialise so that the checksum matches the server response.

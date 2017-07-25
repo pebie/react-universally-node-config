@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContentGridTemplate from './ContentGridTemplate';
 import config from './../../config';
+import { setContentId } from '../../helpers/contents';
 
 class ContentGridContainer extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class ContentGridContainer extends Component {
   componentDidMount() {
     // Fetch content
     fetch(config('rest.contentGrid')).then(response => response.json()).then((json) => {
+      setContentId(json.contents);
       this.setState({
         contents: json.contents,
       });
