@@ -25,8 +25,13 @@ const ProgressTimer = ({ isInHistory, userProgress }) =>
   );
 
 ProgressTimer.propTypes = {
-  isInHistory: PropTypes.bool.isRequired,
-  userProgress: PropTypes.number.isRequired,
+  isInHistory: PropTypes.bool,
+  userProgress: PropTypes.number,
+};
+
+ProgressTimer.defaultProps = {
+  isInHistory: false,
+  userProgress: 0,
 };
 
 export default ProgressTimer;

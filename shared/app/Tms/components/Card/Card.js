@@ -5,17 +5,15 @@ import CardTitle from './CardTitle/CardTitle';
 import CardSubtitle from './CardSubtitle/CardSubtitle';
 import CardSubtitlePlaceholder from './CardSubtitle/CardSubtitlePlaceholder';
 import TimerStatus from './TimerStatus/TimerStatus';
-import CardRemoveBtn from './CardRemoveBtn/CardRemoveBtn';
+import Remove from '../Remove/Remove';
 import Poster from '../Poster/Poster';
 import PosterPlaceholder from './../Poster/PosterPlaceholder';
 import RatioHandler from './../RatioHandler/RatioHandler';
-import Label from '../Label/Label';
 import LogoChannel from '../LogoChannel/LogoChannel';
 import Channel from './../Channel/Channel';
+import LastDay from './../LastDay/LastDay';
 import ProgressTimer from '../ProgressTimer/ProgressTimer';
 import { isOnGoing } from '../../helpers/contents';
-import { daysBetweenDates } from '../../helpers/date';
-import { AVAILABILITY_LIMIT } from '../../constants/limits';
 import styles from './Card.scss';
 
 /**
@@ -29,20 +27,15 @@ import styles from './Card.scss';
  * @param {string} [logoChannel] url of logoChannel image
  * @param {number} [ratio=169] ratio used for image sizes
  * @param {func} [onClick] function to trigger when clicking on card
- * @param {object} [onGoing] infos about the progress of the media
- * @param {func|node} [action] CTA or action to pass to card
- * @param {bool} [dark=false] wether we are in a dark context (used for styling)
+ * @param {shape} [onGoing] infos about the progress of the media (startime, endtime)
+ * @param {node} [actionBar] right action bar
+ * @param {bool} [dark=false] wether we are in a dark context (change font color)
  * @param {bool} [displaySubtitlePlaceholder] display the placeholder of the subtitle
  * @param {func} [getPosterRef] allow to get ref of Poster component outside component
- * @param {object} [profileProgress] progression of the user viewing programs
+ * @param {shape} [profileProgress] progression of the user in programs (isInHistory, userProgress)
  * @param {object} [imageSpecificities] infos about the specifity of content
- *  (ex: isLogo for channel)
- * @param {number} [availabilityEndDate] date after which the episode won't be available (timestamp)
- * @param {string} [contentID] (For CardRemoveBtn) ContentID of the item to delete
- * @param {string} [listType] (For CardRemoveBtn) listType of the Card
- * @param {string} [token] (For CardRemoveBtn) Token
- * @param {func} [removePersoInLanding] (For CardRemoveBtn) Action to dispatch to remove item
- * @param {number} [strateNumber] (For CardRemoveBtn) Index of the strate in the list
+ *  (ex: isLogo for channel see mosaic render)
+ * @param {number} [label] display label
  */
 const Card = ({
   image,
@@ -50,7 +43,7 @@ const Card = ({
   ratio,
   title,
   subtitle,
-  action,
+  actionBar,
   onGoing,
   onClick,
   dark,
@@ -58,13 +51,9 @@ const Card = ({
   getPosterRef,
   profileProgress,
   imageSpecificities,
-  availabilityEndDate,
+  label,
   isRemovableItem,
   onClickCrossButton,
-  contentID,
-  listType,
-  token,
-  strateNumber,
 }) =>
   (<div
     className={classnames(styles.card, {
@@ -74,31 +63,16 @@ const Card = ({
     role="button"
     tabIndex={0}
   >
-    {isRemovableItem &&
-      <CardRemoveBtn
-        removePersoInLanding={onClickCrossButton}
-        contentID={contentID}
-        listType={listType}
-        token={token}
-        strateNumber={strateNumber}
-      />}
+    {isRemovableItem && <Remove position="top-right" onClick={onClickCrossButton} />}
     <div ref={getPosterRef}>
       <RatioHandler ratio={ratio}>
         {image
           ? <div className={styles.card__content}>
+            {/* Use full space to display image */}
             {imageSpecificities !== 'isLogo'
                 ? <div>
                   <Poster image={image} dark={dark} />
-                  {availabilityEndDate &&
-                      daysBetweenDates(availabilityEndDate, new Date()) <= AVAILABILITY_LIMIT &&
-                      <div
-                        className={classnames(
-                          styles.card__labelWrapper,
-                          styles['card__labelWrapper--top-right'],
-                        )}
-                      >
-                        <Label content="Derniers jours" />
-                      </div>}
+                  {label && <LastDay text={label.text} position={label.position} />}
                   {logoChannel &&
                   <div>
                     <div className={styles.card__channel__background} />
@@ -123,6 +97,7 @@ const Card = ({
                   </div>}
                 </div>
                 : <div className={styles.card__isLogo}>
+                  {/* Use border to display immage */}
                   <Channel logoUrl={image} name="channel" />
                 </div>}
           </div>
@@ -131,18 +106,19 @@ const Card = ({
     </div>
     <div
       className={classnames(styles.card__metainfos, {
-        [styles['card__metainfos--action']]: !!action,
+        [styles['card__metainfos--action']]: !!actionBar,
       })}
     >
-      <div className={classnames({ [styles.card__metainfosWrapper]: !!action })}>
+      <div className={classnames({ [styles.card__metainfosWrapper]: !!actionBar })}>
         {title && <CardTitle title={title} dark={dark} />}
         {subtitle
           ? <CardSubtitle subtitle={subtitle} dark={dark} />
           : displaySubtitlePlaceholder && <CardSubtitlePlaceholder />}
       </div>
-      {action
+      {actionBar
         ? <div className={styles.card__action}>
-          {typeof action === 'function' ? action() : action}
+          {/* Render actionBar node if it's a function else it's render other jsx type*/}
+          {typeof actionBar === 'function' ? actionBar() : actionBar}
         </div>
         : null}
     </div>
@@ -161,20 +137,19 @@ Card.propTypes = {
   onClick: PropTypes.func,
   dark: PropTypes.bool,
   displaySubtitlePlaceholder: PropTypes.bool,
-  action: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+  actionBar: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
   getPosterRef: PropTypes.func,
   profileProgress: PropTypes.shape({
     isInHistory: PropTypes.bool,
     userProgress: PropTypes.number,
   }),
   imageSpecificities: PropTypes.string,
-  availabilityEndDate: PropTypes.number,
+  label: PropTypes.shape({
+    position: PropTypes.string,
+    text: PropTypes.string,
+  }),
   isRemovableItem: PropTypes.bool,
   onClickCrossButton: PropTypes.func,
-  contentID: PropTypes.string,
-  listType: PropTypes.string,
-  token: PropTypes.string,
-  strateNumber: PropTypes.number,
 };
 
 Card.defaultProps = {
@@ -183,7 +158,7 @@ Card.defaultProps = {
   title: '',
   subtitle: '',
   onClick: () => {},
-  action: null,
+  actionBar: null,
   getPosterRef: () => {},
   profileProgress: null,
   ratio: 169,
@@ -191,7 +166,7 @@ Card.defaultProps = {
   displaySubtitlePlaceholder: false,
   onGoing: undefined,
   imageSpecificities: undefined,
-  availabilityEndDate: 0,
+  label: null,
   isRemovableItem: false,
   onClickCrossButton: () => {},
   contentID: '',

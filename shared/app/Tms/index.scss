@@ -1,7 +1,27 @@
+@import './assets/base_scss/_utilities';
+body{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  color: #ec3655;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .list {
-  margin-left: 5rem;
+  margin-left: 3rem;
   &_title{
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
   &_item {
     display: inline;
@@ -14,4 +34,19 @@
       cursor: pointer;
     }
   }
+}
+
+.icon {
+  @include size(3rem);
+  cursor: pointer;
+  &:hover {
+    fill: #ec3655;
+  }
+}
+.right {
+  margin-right:3rem;
+}
+
+.top{
+  margin-top:1rem;
 }

@@ -14,26 +14,8 @@ $metaInfos:(
   margin: 0
 );
 
-$labelWrapper-positions: (
-  top-right: (
-    top: 1rem,
-    right: 1rem,
-  ),
-  top-left: (
-    top: 1rem,
-    left: 1rem,
-  ),
-  bottom-right: (
-    bottom: 1rem,
-    right: 1rem,
-  ),
-  bottom-left: (
-    bottom: 1rem,
-    left: 1rem,
-  ),
-);
-
 .card {
+  position: relative;
   color: palette(theme, primary);
   cursor: pointer;
 
@@ -139,26 +121,5 @@ $labelWrapper-positions: (
   &__isLogo {
     height: 100%;
     border: 1px solid darken(palette(mono, white), 10%);
-  }
-
-  &__labelWrapper {
-    position: absolute;
-  }
-
-  @each $position, $position-map in $labelWrapper-positions {
-    &__labelWrapper--#{$position} {
-      @if map-has-key($position-map, top) {
-        top: map-get($position-map, top);
-      }
-      @if map-has-key($position-map, right) {
-        right: map-get($position-map, right);
-      }
-      @if map-has-key($position-map, bottom) {
-        bottom: map-get($position-map, bottom);
-      }
-      @if map-has-key($position-map, left) {
-        left: map-get($position-map, left);
-      }
-    }
   }
 }

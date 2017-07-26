@@ -1,0 +1,43 @@
+@import './../../assets/base_scss/_settings';
+@import './../../assets/base_scss/_utilities';
+
+$labelWrapper-positions: (
+  top-right: (
+    top: 1rem,
+    right: 1rem,
+  ),
+  top-left: (
+    top: 1rem,
+    left: 1rem,
+  ),
+  bottom-right: (
+    bottom: 1rem,
+    right: 1rem,
+  ),
+  bottom-left: (
+    bottom: 1rem,
+    left: 1rem,
+  ),
+);
+
+
+.labelWrapper {
+  position: absolute;
+}
+
+@each $position, $position-map in $labelWrapper-positions {
+  .labelWrapper--#{$position} {
+    @if map-has-key($position-map, top) {
+      top: map-get($position-map, top);
+    }
+    @if map-has-key($position-map, right) {
+      right: map-get($position-map, right);
+    }
+    @if map-has-key($position-map, bottom) {
+      bottom: map-get($position-map, bottom);
+    }
+    @if map-has-key($position-map, left) {
+      left: map-get($position-map, left);
+    }
+  }
+}

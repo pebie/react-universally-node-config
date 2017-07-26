@@ -48,10 +48,7 @@ const ContentGridTemplateItem = ({
       onGoing={onGoing}
       imageSpecificities={imageSpecificities}
       contentType={contentType}
-      token={token}
       onClickCrossButton={onClickCrossButton}
-      contentID={content.contentId}
-      strateNumber={strateNumber}
       isRemovableItem={isARemovableContent({ perso: contentType })}
     />
   );

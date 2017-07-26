@@ -25,7 +25,6 @@ const ContentRowTemplateItem = ({
   getPosterRef,
   token,
   onClickCrossButton,
-  strateNumber,
   contentType,
 }) => {
   const title = get(content, 'title', undefined);
@@ -48,10 +47,7 @@ const ContentRowTemplateItem = ({
         getPosterRef={getPosterRef}
         imageSpecificities={imageSpecificities}
         contentType={contentType}
-        token={token}
         onClickCrossButton={onClickCrossButton}
-        contentID={content.contentID}
-        strateNumber={strateNumber}
         isRemovableItem={isARemovableContent({ perso: contentType })}
       />
     </div>
